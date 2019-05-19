@@ -18,6 +18,18 @@ public class Card_Properties_Script : MonoBehaviour
     // This bool will begin as false and will be set to true once it is in a group will all other cards in it's set.
     public bool in_Group;
 
+    private float xbottom = -0.03f;
+    private float ybottom = -4.0f;
+
+    private float xtop = -0.03f;
+    private float ytop = 4.0f;
+
+    private float xleft = -9.5f;
+    private float yleft = -0.07f;
+
+    private float xright = 9.5f;
+    private float yright = 0.04f;
+
     /* TODO:
      * Collisions:
         Implement collition detection in update using rigidbodies and box_coliders to determine when cards are in contact.
@@ -59,5 +71,30 @@ public class Card_Properties_Script : MonoBehaviour
     void Update()
     {
         
+            if (transform.position.y < ybottom)
+            {
+                Vector3 newPosition = new Vector3(transform.position.x, ybottom, transform.position.z);
+                transform.position = newPosition;
+            }
+
+        if (transform.position.y > ytop)
+        {
+            Vector3 newPosition = new Vector3(transform.position.x, ytop, transform.position.z);
+            transform.position = newPosition;
+        }
+
+        if (transform.position.x < xleft)
+        {
+            Vector3 newPosition = new Vector3(xleft, transform.position.y, transform.position.z);
+            transform.position = newPosition;
+        }
+
+        if (transform.position.x > xright)
+        {
+            Vector3 newPosition = new Vector3(xright, transform.position.y, transform.position.z);
+            transform.position = newPosition;
+        }
+
+
     }
 }

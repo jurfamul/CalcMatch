@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: a3aa79a1c297748759cb9683a463580a
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: PG3-DerivativeMatchingRevised_0
+    21300002: PG3-DerivativeMatchingRevised_1
+    21300004: PG3-DerivativeMatchingRevised_2
+    21300006: PG3-DerivativeMatchingRevised_3
+    21300008: PG3-DerivativeMatchingRevised_4
+    21300010: PG3-DerivativeMatchingRevised_5
+    21300012: PG3-DerivativeMatchingRevised_6
+    21300014: PG3-DerivativeMatchingRevised_7
+    21300016: PG3-DerivativeMatchingRevised_8
+    21300018: PG3-DerivativeMatchingRevised_9
+    21300020: PG3-DerivativeMatchingRevised_10
+    21300022: PG3-DerivativeMatchingRevised_11
+    21300024: PG3-DerivativeMatchingRevised_12
+    21300026: PG3-DerivativeMatchingRevised_13
+    21300028: PG3-DerivativeMatchingRevised_14
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,9 +84,331 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 881
+        width: 266
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0969a36d4a14994d83131ffc9965827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 878
+        width: 246
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8889fd29b8e2a8e4fa3699c2f766acd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_2
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 881
+        width: 277
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d6b05e191d68941baeec706a25d9c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 662
+        width: 261
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d36d7752a215dc4c896dba4c81c5238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 659
+        width: 269
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0533058cb0f1f8d40aa28f72647784d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_5
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 656
+        width: 269
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554980cae3b1d674d9d7057bcc022323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 449
+        width: 258
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b6fdc01b11b9745bca3aac3ad2f7d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_7
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 446
+        width: 272
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2de350cd44ca346aef7f0a0dcbc870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_8
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 440
+        width: 269
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf9c40d6946d3e4383331da34a69b22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 230
+        width: 269
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d5c56b7c56b3a4487a6096d99c7bdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_10
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 230
+        width: 266
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfec36ffacdb7746831676f9a3bfb4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_11
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 226
+        width: 263
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e6b9cb2001ebc41b2b29e12ac352c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 13
+        width: 271
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2044a096b355a428cd6a674a619202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_13
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 13
+        width: 254
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e85ae93c8ed8614795349155044e78c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PG3-DerivativeMatchingRevised_14
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 10
+        width: 258
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4b1ae5fa7103d4383061a02943da08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

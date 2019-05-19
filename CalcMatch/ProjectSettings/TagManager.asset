@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BlueCard
+  - GreenCard
+  - PinkCard
+  - Border
   layers:
   - Default
   - TransparentFX
@@ -13,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - boundingBox
+  - cards
   - 
   - 
   - 
@@ -40,4 +44,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 219263895
+    locked: 0
+  - name: Card
+    uniqueID: 550306987
+    locked: 0
+  - name: Track
+    uniqueID: 4275242481
     locked: 0
