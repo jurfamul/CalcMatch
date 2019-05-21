@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{887E4677-48BE-2B72-9D6D-4E937E8F4261}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ProjectFiles/scripts/SpawnObject.cs">
+    <Files>
+      <File FileName="Assets/ProjectFiles/scripts/ClickAndDrag.cs" Line="1" Column="1" />
+      <File FileName="Assets/ProjectFiles/scripts/SpawnObject.cs" Line="8" Column="33" />
+      <File FileName="Assets/ProjectFiles/scripts/ColorPerPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets/ProjectFiles/scripts/DemoOwnershipGui.cs" Line="1" Column="1" />
+      <File FileName="Assets/ProjectFiles/scripts/HighlightOwnedGameObj.cs" Line="1" Column="1" />
+      <File FileName="Assets/ProjectFiles/scripts/InstantiateCube.cs" Line="1" Column="1" />
+      <File FileName="Assets/ProjectFiles/scripts/MaterialPerOwner.cs" Line="1" Column="1" />
+      <File FileName="Assets/ProjectFiles/scripts/OnClickDisableObj.cs" Line="1" Column="1" />
+      <File FileName="Assets/ProjectFiles/scripts/OnClickRequestOwnership.cs" Line="1" Column="1" />
+      <File FileName="Assets/ProjectFiles/scripts/OnClickRightDestroy.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CalcMatch" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="ProjectFiles" expanded="True">
+                <Node name="scripts" expanded="True">
+                  <Node name="SpawnObject.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7e08f54e-7c1f-479d-9b05-b68473c978d1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
