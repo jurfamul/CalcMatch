@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 2e7fb30130c3c48aa868f26ea282263e
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: TaylorSeriesMatchingPG3_0
+    21300002: TaylorSeriesMatchingPG3_1
+    21300004: TaylorSeriesMatchingPG3_2
+    21300006: TaylorSeriesMatchingPG3_3
+    21300008: TaylorSeriesMatchingPG3_4
+    21300010: TaylorSeriesMatchingPG3_5
+    21300012: TaylorSeriesMatchingPG3_6
+    21300014: TaylorSeriesMatchingPG3_7
+    21300016: TaylorSeriesMatchingPG3_8
+    21300018: TaylorSeriesMatchingPG3_9
+    21300020: TaylorSeriesMatchingPG3_10
+    21300022: TaylorSeriesMatchingPG3_11
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,9 +81,260 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 935
+        width: 376
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92c74390c7982f4b9f31ab5f5f39745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_1
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 935
+        width: 376
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd26a05e2b97cd4e926a06846c770d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 755
+        width: 376
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d785b98962ebc64db7ce8a95f5f1533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_3
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 755
+        width: 376
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4816d26f94479a34b8e89076c962f308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 576
+        width: 376
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65939cab216a8ab47a6e6be4acfc0e75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_5
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 576
+        width: 376
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6134f58ba908848b4b422c7a8a1dce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_6
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 396
+        width: 376
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa07e3988a1a6374482ed5a5a1e675d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_7
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 396
+        width: 376
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e605fa97ed91d484582318706ad28b78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 217
+        width: 376
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede02abe651452141a8fa2f09fa805f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 217
+        width: 376
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e530c597014ce44adebd1f95f621cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 37
+        width: 376
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa2c35998bd76346b1967cd4627504a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TaylorSeriesMatchingPG3_11
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 37
+        width: 376
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356bd557642407d4ca5f6a11eb04e3b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
