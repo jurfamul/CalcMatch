@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Card_Properties_Script : MonoBehaviour
 {
     public GameObject gameObject;
+
+    private Vector3 screenPoint;
+    private Vector3 offset;
 
     // These are the game objects components that script will interact with during run time. This list will be updated as needed.
     public static SpriteRenderer playing_Card;
@@ -29,6 +33,7 @@ public class Card_Properties_Script : MonoBehaviour
 
     private float xright = 9.5f;
     private float yright = 0.04f;
+    private RaycastHit2D ray;
 
     /* TODO:
      * Collisions:
@@ -67,10 +72,37 @@ public class Card_Properties_Script : MonoBehaviour
         playing_Card = gameObject.GetComponent<SpriteRenderer>();
     }
 
+    string butName;
+    GameObject tempButton;
+    Button newbutton;
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(1))
+        {
+            //screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+            //offset = gameObject.transform.position -
+            // Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
+            ray = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+            if (ray.collider != null)
+            {
+                if (ray.collider.gameObject == gameObject)
+                {
+
+                    butName = ray.transform.gameObject.name;
+                    butName = butName.Substring(0, butName.Length - 7);
+                    Debug.Log(GameObject.Find(butName));
+                    newbutton = GameObject.Find(butName).GetComponent<Button>();
+                    newbutton.interactable = true;
+
+                    Destroy(gameObject);
+                }
+
+            }
+            //Destroy(gameObject, .00001f);
+           // Debug.Log("TEST DESTROY");
+
+        }
             if (transform.position.y < ybottom)
             {
                 Vector3 newPosition = new Vector3(transform.position.x, ybottom, transform.position.z);
