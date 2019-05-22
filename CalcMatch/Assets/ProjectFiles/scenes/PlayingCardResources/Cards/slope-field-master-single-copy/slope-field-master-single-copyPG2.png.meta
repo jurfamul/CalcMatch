@@ -1,7 +1,17 @@
 fileFormatVersion: 2
 guid: 4dfe504cfb281401a96821311eeb5766
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: slope-field-master-single-copyPG2_0
+    21300002: slope-field-master-single-copyPG2_1
+    21300004: slope-field-master-single-copyPG2_2
+    21300006: slope-field-master-single-copyPG2_3
+    21300008: slope-field-master-single-copyPG2_4
+    21300010: slope-field-master-single-copyPG2_5
+    21300012: slope-field-master-single-copyPG2_6
+    21300014: slope-field-master-single-copyPG2_7
+    21300016: slope-field-master-single-copyPG2_8
+    21300018: slope-field-master-single-copyPG2_9
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,12 +50,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,9 +79,220 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 905
+        width: 376
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a91c75f737c49c408c87bb8ec64c340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 905
+        width: 375
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab73c0e48b56a1d4f983878b2c7b9415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 691
+        width: 376
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d3d0659bc30f34d8f5211a36cb4a98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 691
+        width: 375
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035afd1e2e5a10d45b43c168e9f3869c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_4
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 476
+        width: 376
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d4c95df0687d242b8fd34925d2b9c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_5
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 476
+        width: 375
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0354e36059caa547ae6c3d545457bae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 262
+        width: 376
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50d2ed11e49c494aa6ece61c26554d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 262
+        width: 375
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b71acc486b8614e81d509bfd8124cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 47
+        width: 376
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e09a79d99e6284f99551fe7d026be1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slope-field-master-single-copyPG2_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 47
+        width: 375
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd0a93673a21224494a9ce819561843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

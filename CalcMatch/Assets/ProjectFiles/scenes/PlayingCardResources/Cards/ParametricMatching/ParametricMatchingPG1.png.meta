@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: ae9b5604795684007a214652240e127f
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ParametricMatchingPG1_0
+    21300002: ParametricMatchingPG1_1
+    21300004: ParametricMatchingPG1_2
+    21300006: ParametricMatchingPG1_3
+    21300008: ParametricMatchingPG1_4
+    21300010: ParametricMatchingPG1_5
+    21300012: ParametricMatchingPG1_6
+    21300014: ParametricMatchingPG1_7
+    21300016: ParametricMatchingPG1_8
+    21300018: ParametricMatchingPG1_9
+    21300020: ParametricMatchingPG1_10
+    21300022: ParametricMatchingPG1_11
+    21300024: ParametricMatchingPG1_12
+    21300026: ParametricMatchingPG1_13
+    21300028: ParametricMatchingPG1_14
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,9 +84,320 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 901
+        width: 245
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb45a2f02bdb4104baff4add23e409c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 901
+        width: 246
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58cd06df516571428e49c0932c63cd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_2
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 901
+        width: 246
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77bf9ff03cb7624c9ed9474ec9a3666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 681
+        width: 245
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959529059bfceae49969785465ceb050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_4
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 681
+        width: 246
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f226e2f669247f49b30effbf252afc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_5
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 681
+        width: 246
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae00b1bcaa7073448a35e50c1cc3369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 460
+        width: 245
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfafb4ce42620b4d9886a1b865c769a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_7
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 460
+        width: 246
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb5e1a27f003644bb9b7fc594075106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_8
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 460
+        width: 246
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af982050d02040744833b43add4ce891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_9
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 239
+        width: 245
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd6b4f4319c9f14ba01e1b8f03f0dea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_10
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 239
+        width: 246
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912f76f9479ee5843b64c758b44797f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_11
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 239
+        width: 246
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42396e559bdbdac43b362a8c0ce530fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 18
+        width: 245
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8183a09812a2a40bf26489d957fa16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_13
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 18
+        width: 246
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c3bf12fdcdc6645898ecc8f021146b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParametricMatchingPG1_14
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 18
+        width: 246
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d691eff11c876f14f9960858ce323691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
