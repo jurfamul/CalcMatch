@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/ProjectFiles/scenes/DemoChangeOwner-Scene.unity
     guid: efb7b18562339d8459d546ede0a9e4cc
   - enabled: 1
-    path: Assets/ProjectFiles/scenes/Card_Scene.unity
+    path: Assets/ProjectFiles/scenes/DerivativeGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/ProjectFiles/scenes/ParametricGame.unity
+    guid: f5baa9ccacb7b91439b37af7ee9834d0
   m_configObjects: {}

@@ -124,8 +124,9 @@ GameObject:
   - component: {fileID: 43751193}
   - component: {fileID: 43751192}
   - component: {fileID: 43751191}
+  - component: {fileID: 43751194}
   m_Layer: 5
-  m_Name: TaylorButton
+  m_Name: TaylorSeriesGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,7 +191,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 43751192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 43751194}
+        m_MethodName: changeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &43751192
@@ -230,6 +242,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43751189}
   m_CullTransparentMesh: 0
+--- !u!114 &43751194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43751189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b815d57fe475ee84296b0fbf335866af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &639954768
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,8 +332,9 @@ GameObject:
   - component: {fileID: 682289216}
   - component: {fileID: 682289215}
   - component: {fileID: 682289214}
+  - component: {fileID: 682289217}
   m_Layer: 5
-  m_Name: Parametric Button
+  m_Name: ParametricGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -374,7 +399,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 682289215}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 682289217}
+        m_MethodName: changeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &682289215
@@ -414,6 +450,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682289212}
   m_CullTransparentMesh: 0
+--- !u!114 &682289217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682289212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b815d57fe475ee84296b0fbf335866af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &711278392
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,8 +976,9 @@ GameObject:
   - component: {fileID: 1385503028}
   - component: {fileID: 1385503027}
   - component: {fileID: 1385503026}
+  - component: {fileID: 1385503029}
   m_Layer: 5
-  m_Name: Slope Field Game Button
+  m_Name: SlopeFieldGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -994,7 +1043,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1385503027}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1385503029}
+        m_MethodName: changeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1385503027
@@ -1034,6 +1094,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385503024}
   m_CullTransparentMesh: 0
+--- !u!114 &1385503029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385503024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b815d57fe475ee84296b0fbf335866af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1773924830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,8 +1197,9 @@ GameObject:
   - component: {fileID: 1967208312}
   - component: {fileID: 1967208311}
   - component: {fileID: 1967208310}
+  - component: {fileID: 1967208313}
   m_Layer: 5
-  m_Name: DerivativeButton
+  m_Name: DerivativeGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1191,7 +1264,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1967208311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1967208313}
+        m_MethodName: changeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1967208311
@@ -1231,6 +1315,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967208308}
   m_CullTransparentMesh: 0
+--- !u!114 &1967208313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967208308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b815d57fe475ee84296b0fbf335866af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2073800885
 GameObject:
   m_ObjectHideFlags: 0
