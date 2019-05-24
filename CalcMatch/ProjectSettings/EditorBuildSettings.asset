@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ProjectFiles/scenes/DemoWorker-Scene.unity
     guid: d127e961917b252458a9910af185709e
-  - enabled: 1
+  - enabled: 0
     path: Assets/ProjectFiles/scenes/DemoChangeOwner-Scene.unity
     guid: efb7b18562339d8459d546ede0a9e4cc
   - enabled: 1

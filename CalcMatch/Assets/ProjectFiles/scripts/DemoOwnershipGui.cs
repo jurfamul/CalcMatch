@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-/*
+
 public class DemoOwnershipGui : MonoBehaviour
 {
     public GUISkin Skin;
@@ -50,14 +50,14 @@ public class DemoOwnershipGui : MonoBehaviour
         {
             int playerNr = PhotonNetwork.player.ID;
             string playerIsMaster = PhotonNetwork.player.IsMasterClient ? "(master) " : "";
-            string playerColor = this.GetColorName(PhotonNetwork.player.ID);
+            string playerColor = "red";
             GUILayout.Label(string.Format("player {0}, {1} {2}(you)", playerNr, playerColor, playerIsMaster));
 
             foreach (PhotonPlayer otherPlayer in PhotonNetwork.otherPlayers)
             {
                 playerNr = otherPlayer.ID;
                 playerIsMaster = otherPlayer.IsMasterClient ? "(master)" : "";
-                playerColor = this.GetColorName(otherPlayer.ID);
+                playerColor = "red";
                 GUILayout.Label(string.Format("player {0}, {1} {2}", playerNr, playerColor, playerIsMaster));
             }
 
@@ -73,7 +73,7 @@ public class DemoOwnershipGui : MonoBehaviour
     }
 
     #endregion
-    
+    /*
     private string GetColorName(int playerId)
     {
         Debug.Log("Player ID for index : " + playerId);
@@ -92,6 +92,5 @@ public class DemoOwnershipGui : MonoBehaviour
         }
 
         return string.Empty;
-    }
+    }*/
 }
-*/
