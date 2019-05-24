@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{887E4677-48BE-2B72-9D6D-4E937E8F4261}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ProjectFiles/scripts/EventManager.cs">
     <Files>
-      <File FileName="Assets/ProjectFiles/scripts/EventManager.cs" Line="36" Column="12" />
-      <File FileName="Assets/ProjectFiles/scripts/CardScripts/Card_Properties_Script.cs" Line="98" Column="29" />
+      <File FileName="Assets/ProjectFiles/scripts/EventManager.cs" Line="13" Column="5" />
+      <File FileName="Assets/ProjectFiles/scripts/CardScripts/Card_Properties_Script.cs" Line="96" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,16 +19,11 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="CalcMatch" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6da65770-aa45-4f76-96ae-4f5072f699cb" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fe81052d-8211-427a-8e38-1cb1063fb2fd" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

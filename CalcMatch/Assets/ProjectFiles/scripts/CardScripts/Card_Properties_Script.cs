@@ -91,11 +91,11 @@ public class Card_Properties_Script : MonoBehaviour
 
                     butName = ray.transform.gameObject.name;
                     butName = butName.Substring(0, butName.Length - 7);
-                    Debug.Log(GameObject.Find(butName));
+                    //Debug.Log(GameObject.Find(butName));
                     newbutton = GameObject.Find(butName).GetComponent<Button>();
                     newbutton.interactable = true;
 
-                    Destroy(gameObject);
+                    PhotonNetwork.Destroy(gameObject);
                 }
 
             }

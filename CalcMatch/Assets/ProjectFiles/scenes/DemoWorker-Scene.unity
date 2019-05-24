@@ -482,8 +482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca927a251ea077448a4395637646cae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Skin: {fileID: 11400000, guid: 0a36872c871b46d4ea5e4e064f3bf975, type: 2}
-  TransferOwnershipOnRequest: 1
 --- !u!4 &4488051460215945362
 Transform:
   m_ObjectHideFlags: 0
