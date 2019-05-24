@@ -17,6 +17,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: GreenCard
       objectReference: {fileID: 0}
+    - target: {fileID: 499173705892721136, guid: 6ec3aa2f7bae2644db7228287f93a643,
+        type: 3}
+      propertyPath: card_Type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4006007370247314926, guid: 6ec3aa2f7bae2644db7228287f93a643,
         type: 3}
       propertyPath: viewIdField
@@ -82,10 +87,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 499173705892721136, guid: 6ec3aa2f7bae2644db7228287f93a643,
+    - target: {fileID: 4834287713667263861, guid: 6ec3aa2f7bae2644db7228287f93a643,
         type: 3}
-      propertyPath: card_Type
-      value: 1
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7913340004520004302, guid: 6ec3aa2f7bae2644db7228287f93a643,
         type: 3}
@@ -111,11 +116,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.48584908
-      objectReference: {fileID: 0}
-    - target: {fileID: 4834287713667263861, guid: 6ec3aa2f7bae2644db7228287f93a643,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ec3aa2f7bae2644db7228287f93a643, type: 3}
