@@ -8,6 +8,8 @@ TagManager:
   - GreenCard
   - PinkCard
   - Border
+  - Card
+  - Undefined
   layers:
   - Default
   - TransparentFX
