@@ -3,6 +3,7 @@
 public class DemoOwnershipGui : MonoBehaviour
 {
     public GUISkin Skin;
+    public Font font;
     public bool TransferOwnershipOnRequest = true;
 
     public void OnOwnershipRequest(object[] viewAndPlayer)
@@ -34,6 +35,13 @@ public class DemoOwnershipGui : MonoBehaviour
     public void OnGUI()
     {
         GUI.skin = this.Skin;
+
+        if (!font)
+        {
+            Debug.LogError("No font found, assign one in the inspector.");
+            return;
+        }
+        GUI.skin.font = font;
         GUILayout.BeginArea(new Rect(Screen.width - 200, 0, 200, Screen.height));
         {
             string label = TransferOwnershipOnRequest ? "passing objects" : "rejecting to pass";

@@ -4,7 +4,13 @@ labels:
 - ExitGames
 - PUN
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Skin: {instanceID: 0}
+  - font: {fileID: 12800000, guid: c2d622bc4892ff441aee9289a6006707, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

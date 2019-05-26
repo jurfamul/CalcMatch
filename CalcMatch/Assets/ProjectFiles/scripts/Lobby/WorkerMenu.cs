@@ -5,6 +5,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
+using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using ExitGames.Client.Photon;
@@ -12,6 +13,7 @@ using ExitGames.Client.Photon;
 public class WorkerMenu : MonoBehaviour
 {
     public GUISkin Skin;
+    public Font font;
     public Vector2 WidthAndHeight;
     //public Vector2 WidthAndHeight = new Vector2(12000, 5000);
     private string roomName = "myRoom";
@@ -22,7 +24,7 @@ public class WorkerMenu : MonoBehaviour
 
     public static readonly string SceneNameMenu = "DemoWorker-Scene";
 
-    public static readonly string SceneNameGame = "DerivativeGame";
+    public static readonly string SceneNameGame = "ChooseGame";
 
     private string errorDialog;
     private double timeToClearDialog;
@@ -69,6 +71,17 @@ public class WorkerMenu : MonoBehaviour
             GUI.skin = this.Skin;
         }
 
+        if (!font)
+        {
+            Debug.LogError("No font found, assign one in the inspector.");
+            return;
+        }
+        GUI.skin.font = font;
+        GUI.skin.label.fontSize = 22;
+
+        GUI.backgroundColor = Color.red;
+
+
         if (!PhotonNetwork.connected)
         {
             if (PhotonNetwork.connecting)
@@ -96,11 +109,13 @@ public class WorkerMenu : MonoBehaviour
             return;
         }
 
-        Rect content = new Rect((Screen.width - this.WidthAndHeight.x)/2, (Screen.height - this.WidthAndHeight.y)/2, this.WidthAndHeight.x, this.WidthAndHeight.y);
-        GUI.Box(content, "Join or Create Room");
-        GUILayout.BeginArea(content);
+
+        Rect title = new Rect((Screen.width - this.WidthAndHeight.x)/2, (Screen.height - this.WidthAndHeight.y)/2, this.WidthAndHeight.x, this.WidthAndHeight.y);
+        GUI.Box(title, "Welcome to CalcMatch! Join or Create a Room.");
+        GUILayout.BeginArea(title);
 
         GUILayout.Space(40);
+       
 
         // Player name
         GUILayout.BeginHorizontal();

@@ -196,7 +196,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.11764706, g: 0.11764706, b: 0.1254902, a: 0}
+  m_BackGroundColor: {r: 0.3207547, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -302,7 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02ce27e88b39fa428538620fe0335e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Skin: {fileID: 11400000, guid: 0a36872c871b46d4ea5e4e064f3bf975, type: 2}
+  Skin: {fileID: 0}
+  font: {fileID: 12800000, guid: c2d622bc4892ff441aee9289a6006707, type: 3}
   WidthAndHeight: {x: 960, y: 680}
 --- !u!196 &30
 NavMeshSettings:
@@ -437,6 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1465271790}
+  - component: {fileID: 1465271791}
   m_Layer: 0
   m_Name: 'GuiText: Demo Worker'
   m_TagString: Untagged
@@ -458,6 +460,21 @@ Transform:
   m_Father: {fileID: 275816485}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1465271791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465271789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02ce27e88b39fa428538620fe0335e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Skin: {fileID: 0}
+  font: {fileID: 12800000, guid: c2d622bc4892ff441aee9289a6006707, type: 3}
+  WidthAndHeight: {x: 0, y: 0}
 --- !u!114 &4488051460215945360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,6 +499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca927a251ea077448a4395637646cae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Skin: {fileID: 0}
+  font: {fileID: 12800000, guid: c2d622bc4892ff441aee9289a6006707, type: 3}
+  TransferOwnershipOnRequest: 1
 --- !u!4 &4488051460215945362
 Transform:
   m_ObjectHideFlags: 0
@@ -535,6 +555,7 @@ GameObject:
   - component: {fileID: 4488051460215945363}
   - component: {fileID: 4488051460215945361}
   - component: {fileID: 4488051460215945360}
+  - component: {fileID: 4488051460215945365}
   m_Layer: 0
   m_Name: photonDontDestroy
   m_TagString: Untagged
@@ -542,3 +563,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4488051460215945365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4488051460215945364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02ce27e88b39fa428538620fe0335e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Skin: {fileID: 0}
+  font: {fileID: 12800000, guid: c2d622bc4892ff441aee9289a6006707, type: 3}
+  WidthAndHeight: {x: 0, y: 0}
