@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 3283714073918585356}
   - component: {fileID: 1255585571401162215}
   - component: {fileID: 1516119740034020725}
+  - component: {fileID: 127946996744470053}
   m_Layer: 0
   m_Name: Playing_Card
   m_TagString: Untagged
@@ -323,3 +324,32 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &127946996744470053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7446455980930655804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7d96339e9078b469523aeafea825a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locs:
+  - {x: -352.55, y: 183, z: 0}
+  - {x: -352.55, y: 143.625, z: 0}
+  - {x: -352.55, y: 104.25, z: 0}
+  - {x: -352.55, y: 64.875, z: 0}
+  - {x: -352.55, y: 25.5, z: 0}
+  - {x: -352.55, y: -13.875, z: 0}
+  - {x: -352.55, y: -53.25, z: 0}
+  - {x: -352.55, y: -92.625, z: 0}
+  - {x: -313, y: 183, z: 0}
+  - {x: -313, y: 143.625, z: 0}
+  - {x: -313, y: 104.25, z: 0}
+  - {x: -313, y: 64.875, z: 0}
+  - {x: -313, y: 25.5, z: 0}
+  - {x: -313, y: -13.875, z: 0}
+  - {x: -313, y: -53.25, z: 0}
+  - {x: -313, y: -92.625, z: 0}
