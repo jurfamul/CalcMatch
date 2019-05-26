@@ -16,7 +16,7 @@ public class WorkerMenu : MonoBehaviour
     public Font font;
     public Vector2 WidthAndHeight;
     //public Vector2 WidthAndHeight = new Vector2(12000, 5000);
-    private string roomName = "myRoom";
+    private string roomName = null;
 
     private Vector2 scrollPos = Vector2.zero;
 
@@ -111,11 +111,15 @@ public class WorkerMenu : MonoBehaviour
 
 
         Rect title = new Rect((Screen.width - this.WidthAndHeight.x)/2, (Screen.height - this.WidthAndHeight.y)/2, this.WidthAndHeight.x, this.WidthAndHeight.y);
-        GUI.Box(title, "Welcome to CalcMatch! Join or Create a Room.");
+        GUI.Box(title, "Welcome to CalcMatch!");
         GUILayout.BeginArea(title);
 
-        GUILayout.Space(40);
-       
+        GUILayout.Space(50);
+
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("Join or Create a Room", GUILayout.Width(250));
+        GUILayout.EndHorizontal();
+
 
         // Player name
         GUILayout.BeginHorizontal();
@@ -139,17 +143,6 @@ public class WorkerMenu : MonoBehaviour
         if (GUILayout.Button("Create Room", GUILayout.Width(150)))
         {
             PhotonNetwork.CreateRoom(this.roomName, new RoomOptions() { MaxPlayers = 4 }, null);
-        }
-
-        GUILayout.EndHorizontal();
-
-        // Create a room (fails if exist!)
-        GUILayout.BeginHorizontal();
-        GUILayout.FlexibleSpace();
-        //this.roomName = GUILayout.TextField(this.roomName);
-        if (GUILayout.Button("Join Room", GUILayout.Width(150)))
-        {
-            PhotonNetwork.JoinRoom(this.roomName);
         }
 
         GUILayout.EndHorizontal();
