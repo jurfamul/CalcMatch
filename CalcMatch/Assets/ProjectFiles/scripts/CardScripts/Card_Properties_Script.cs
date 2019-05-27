@@ -70,6 +70,7 @@ public class Card_Properties_Script : MonoBehaviour
         in_Group = false;
 
         playing_Card = gameObject.GetComponent<SpriteRenderer>();
+        Debug.Log("card name " + playing_Card.name);
     }
 
     string butName;
@@ -78,7 +79,7 @@ public class Card_Properties_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+     /*   if (Input.GetMouseButtonDown(1))
         {
             //screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
             //offset = gameObject.transform.position -
@@ -103,6 +104,7 @@ public class Card_Properties_Script : MonoBehaviour
            // Debug.Log("TEST DESTROY");
 
         }
+        */
             if (transform.position.y < ybottom)
             {
                 Vector3 newPosition = new Vector3(transform.position.x, ybottom, transform.position.z);
