@@ -71,8 +71,11 @@ public class Card_Properties_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isViewing = false;
-        playing_Card_Sprite = gameObject.GetComponent<SpriteRenderer>();
+        card_Type = 0;
+        group_Num = 0;
+        in_Group = false;
+
+        playing_Card = gameObject.GetComponent<SpriteRenderer>();
     }
 
     string butName;
@@ -81,7 +84,7 @@ public class Card_Properties_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetButtonDown("Jump"))
+        if (Input.GetMouseButtonDown(1))
         {
             //screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
             //offset = gameObject.transform.position -
@@ -112,6 +115,11 @@ public class Card_Properties_Script : MonoBehaviour
             Vector3 newPosition = new Vector3(transform.position.x, ybottom, transform.position.z);
             transform.position = newPosition;
         }
+            if (transform.position.y < ybottom)
+            {
+                Vector3 newPosition = new Vector3(transform.position.x, ybottom, transform.position.z);
+                transform.position = newPosition;
+            }
 
         if (transform.position.y > ytop)
         {
@@ -345,3 +353,8 @@ public class Card_Properties_Script : MonoBehaviour
         }
     }
 }
+
+        isViewing = false;
+        playing_Card_Sprite = gameObject.GetComponent<SpriteRenderer>();
+    {
+        /*if (Input.GetButtonDown("Jump"))

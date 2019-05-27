@@ -345,6 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 90076301}
+  card: {fileID: 0}
 --- !u!114 &90076301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,6 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 144016033}
+  card: {fileID: 0}
 --- !u!114 &144016033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1436,6 +1438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 253403400}
+  card: {fileID: 0}
 --- !u!114 &253403400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1986,6 +1989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 388654700}
+  card: {fileID: 0}
 --- !u!114 &388654700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2702,6 +2706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 597700126}
+  card: {fileID: 0}
 --- !u!114 &597700126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3203,6 +3208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 641020607}
+  card: {fileID: 0}
 --- !u!114 &641020607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3368,6 +3374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 656695973}
+  card: {fileID: 0}
 --- !u!114 &656695973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3612,6 +3619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 682531440}
+  card: {fileID: 0}
 --- !u!114 &682531440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3935,6 +3943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 718324410}
+  card: {fileID: 0}
 --- !u!114 &718324410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4100,6 +4109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 739232384}
+  card: {fileID: 0}
 --- !u!114 &739232384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4681,6 +4691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 836071239}
+  card: {fileID: 0}
 --- !u!114 &836071239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4945,6 +4956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 889298649}
+  card: {fileID: 0}
 --- !u!114 &889298649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5189,6 +5201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 905888828}
+  card: {fileID: 0}
 --- !u!114 &905888828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5334,6 +5347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 938425359}
+  card: {fileID: 0}
 --- !u!114 &938425359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5519,6 +5533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 940632910}
+  card: {fileID: 0}
 --- !u!114 &940632910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5684,6 +5699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 960777395}
+  card: {fileID: 0}
 --- !u!114 &960777395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5928,6 +5944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 980857680}
+  card: {fileID: 0}
 --- !u!114 &980857680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6359,6 +6376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1034083524}
+  card: {fileID: 0}
 --- !u!114 &1034083524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6702,6 +6720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1075270002}
+  card: {fileID: 0}
 --- !u!114 &1075270002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6926,6 +6945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1114283230}
+  card: {fileID: 0}
 --- !u!114 &1114283230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7091,6 +7111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1137219317}
+  card: {fileID: 0}
 --- !u!114 &1137219317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7355,6 +7376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1162183026}
+  card: {fileID: 0}
 --- !u!114 &1162183026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7718,6 +7740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1215970796}
+  card: {fileID: 0}
 --- !u!114 &1215970796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7863,6 +7886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1237914100}
+  card: {fileID: 0}
 --- !u!114 &1237914100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8157,6 +8181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1284384664}
+  card: {fileID: 0}
 --- !u!114 &1284384664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8533,6 +8558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1401404374}
+  card: {fileID: 0}
 --- !u!114 &1401404374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8678,6 +8704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1410903723}
+  card: {fileID: 0}
 --- !u!114 &1410903723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9282,6 +9309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1517845825}
+  card: {fileID: 0}
 --- !u!114 &1517845825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9526,6 +9554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1563614887}
+  card: {fileID: 0}
 --- !u!114 &1563614887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9691,6 +9720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1581710718}
+  card: {fileID: 0}
 --- !u!114 &1581710718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9795,6 +9825,7 @@ GameObject:
   - component: {fileID: 1603707528}
   - component: {fileID: 1603707527}
   - component: {fileID: 1603707531}
+  - component: {fileID: 1603707532}
   m_Layer: 5
   m_Name: Der.Blue.1
   m_TagString: BlueCard
@@ -9836,6 +9867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1603707528}
+  card: {fileID: 0}
 --- !u!114 &1603707528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9946,6 +9978,33 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &1603707532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603707525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 1603707526}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 1
+  instantiationId: 1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
 --- !u!1 &1657897743
 GameObject:
   m_ObjectHideFlags: 0
@@ -10001,6 +10060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1657897746}
+  card: {fileID: 0}
 --- !u!114 &1657897746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10260,6 +10320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1690617295}
+  card: {fileID: 0}
 --- !u!114 &1690617295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10583,6 +10644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1741388049}
+  card: {fileID: 0}
 --- !u!114 &1741388049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10748,6 +10810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1755864295}
+  card: {fileID: 0}
 --- !u!114 &1755864295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10913,6 +10976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1755891302}
+  card: {fileID: 0}
 --- !u!114 &1755891302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11058,6 +11122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1826711369}
+  card: {fileID: 0}
 --- !u!114 &1826711369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11475,6 +11540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1866858172}
+  card: {fileID: 0}
 --- !u!114 &1866858172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11640,6 +11706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1895515566}
+  card: {fileID: 0}
 --- !u!114 &1895515566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11805,6 +11872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1899689491}
+  card: {fileID: 0}
 --- !u!114 &1899689491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12049,6 +12117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1925083847}
+  card: {fileID: 0}
 --- !u!114 &1925083847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12517,6 +12586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 2060216672}
+  card: {fileID: 0}
 --- !u!114 &2060216672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12682,6 +12752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 2063955743}
+  card: {fileID: 0}
 --- !u!114 &2063955743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12946,6 +13017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 2115588304}
+  card: {fileID: 0}
 --- !u!114 &2115588304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13111,6 +13183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 2116635035}
+  card: {fileID: 0}
 --- !u!114 &2116635035
 MonoBehaviour:
   m_ObjectHideFlags: 0

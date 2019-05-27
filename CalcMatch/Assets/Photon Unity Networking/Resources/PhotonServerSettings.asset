@@ -49,4 +49,5 @@ MonoBehaviour:
   - OnMouseDrag
   - smoothNetMovement
   - Update
+  - RPC_disable
   DisableAutoOpenWizard: 1
