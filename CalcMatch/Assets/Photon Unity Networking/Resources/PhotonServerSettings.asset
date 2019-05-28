@@ -50,4 +50,9 @@ MonoBehaviour:
   - smoothNetMovement
   - Update
   - RPC_disable
+  - makeChild
+  - addchild_RPC
+  - removeChild_RPC
+  - collapseGroup_RPC
+  - expandGroup_RPC
   DisableAutoOpenWizard: 1

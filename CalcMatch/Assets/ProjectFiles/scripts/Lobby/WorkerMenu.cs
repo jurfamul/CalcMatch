@@ -44,6 +44,7 @@ public class WorkerMenu : MonoBehaviour
 
     public void Awake()
     {
+        PhotonNetwork.autoCleanUpPlayerObjects = false;
         // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
         PhotonNetwork.automaticallySyncScene = true;
 
@@ -96,7 +97,7 @@ public class WorkerMenu : MonoBehaviour
             if (this.connectFailed)
             {
                 GUILayout.Label("Connection failed. Check setup and use Setup Wizard to fix configuration.");
-                GUILayout.Label(String.Format("Server: {0}", new object[] {PhotonNetwork.ServerAddress}));
+                GUILayout.Label(String.Format("Server: {0}", new object[] { PhotonNetwork.ServerAddress }));
                 GUILayout.Label("AppId: " + PhotonNetwork.PhotonServerSettings.AppID.Substring(0, 8) + "****"); // only show/log first 8 characters. never log the full AppId.
 
                 if (GUILayout.Button("Try Again", GUILayout.Width(100)))
@@ -110,7 +111,7 @@ public class WorkerMenu : MonoBehaviour
         }
 
 
-        Rect title = new Rect((Screen.width - this.WidthAndHeight.x)/2, (Screen.height - this.WidthAndHeight.y)/2, this.WidthAndHeight.x, this.WidthAndHeight.y);
+        Rect title = new Rect((Screen.width - this.WidthAndHeight.x) / 2, (Screen.height - this.WidthAndHeight.y) / 2, this.WidthAndHeight.x, this.WidthAndHeight.y);
         GUI.Box(title, "Welcome to CalcMatch!");
         GUILayout.BeginArea(title);
 
@@ -250,4 +251,5 @@ public class WorkerMenu : MonoBehaviour
         Debug.Log("As OnConnectedToMaster() got called, the PhotonServerSetting.AutoJoinLobby must be off. Joining lobby by calling PhotonNetwork.JoinLobby().");
         PhotonNetwork.JoinLobby();
     }
+
 }
