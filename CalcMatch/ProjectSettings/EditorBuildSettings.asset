@@ -15,21 +15,24 @@ EditorBuildSettings:
     path: Assets/ProjectFiles/scenes/DemoChangeOwner-Scene.unity
     guid: efb7b18562339d8459d546ede0a9e4cc
   - enabled: 0
-    path: Assets/ProjectFiles/scenes/Card_Scene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/ProjectFiles/scenes/ParametricGame.unity
-    guid: f5baa9ccacb7b91439b37af7ee9834d0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/ProjectFiles/scenes/ChooseGame.unity
     guid: b27cf9e6bbea3804d8e6af7f09c275ea
   - enabled: 1
     path: Assets/ProjectFiles/scenes/DerivativeGame.unity
     guid: c46311f0c7689624099d50332bde7698
-  - enabled: 1
-    path: Assets/ProjectFiles/scenes/TaylorSeriesGame.unity
-    guid: 150228ec855e580408fe86cb5517c696
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/ProjectFiles/scenes/SlopeFieldGame.unity
-    guid: 76cd1740bf7e7404a881d6f57e4ce305
+    guid: 2100a4462fd1a7b4589a1874ef0d4d50
   m_configObjects: {}
