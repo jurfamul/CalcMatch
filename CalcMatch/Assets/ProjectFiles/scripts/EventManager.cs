@@ -19,6 +19,7 @@ public class EventManager : Photon.PunBehaviour
     private void Start()
     {
         PV = GetComponent<PhotonView>();
+      
         //clicked = false;
     }
 
@@ -26,10 +27,13 @@ public class EventManager : Photon.PunBehaviour
     //GameObject card;
     public void OnButtonClick()
     {
-         
-        var go = EventSystem.current.currentSelectedGameObject;
-  
-       
+
+
+
+
+        go = EventSystem.current.currentSelectedGameObject;
+
+        Debug.Log("button name is " + cChange);
         if (clicked == false)
         {
 
@@ -37,10 +41,12 @@ public class EventManager : Photon.PunBehaviour
             {
                card = PhotonNetwork.Instantiate(go.name, spawnPoint.position, spawnPoint.rotation, 0);
                 card.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
+                go.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
+           
                 if (card.GetComponent<PhotonView>().ownerId != PhotonNetwork.player.ID)
                 {
                     
-                    PV.RPC("RPC_disable", PhotonTargets.AllBuffered);
+                    PV.RPC("RPC_disable", PhotonTargets.AllBuffered, cChange);
                     Debug.Log("not mine owner is " + card.GetComponent<PhotonView>().ownerId);
                 }
                 //clicked = true;
@@ -62,6 +68,7 @@ public class EventManager : Photon.PunBehaviour
         
             butName = go.name + "(Clone)";
             Debug.Log(go.name);
+          
             card = GameObject.Find(butName);
             card.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
 
@@ -72,10 +79,16 @@ public class EventManager : Photon.PunBehaviour
     }
 
     [PunRPC]
-    public void RPC_disable()
+    public void RPC_disable(string c)
     {
         if (clicked == true)
         {
+            color = GameObject.Find(c).gameObject.GetComponent<Image>().color;
+            //  go.GetComponent<Image>().color = Color.gray;
+            color.a = 1;
+            //  go.GetComponent<Image>().color = color;
+            GameObject.Find(c).gameObject.GetComponent<Image>().color = color;
+            Debug.Log("clicked is being set to false button name is " + c);
             //Debug.Log("SETTING TRUE");
             clicked = false;
         }
