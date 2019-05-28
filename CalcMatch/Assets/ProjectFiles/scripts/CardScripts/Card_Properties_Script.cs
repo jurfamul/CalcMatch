@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-[RequireComponent(typeof(PhotonView))]
-public class Card_Properties_Script : Photon.PunBehaviour
+public class Card_Properties_Script : MonoBehaviour
 {
     public GameObject card;
     private Vector3 screenPoint;
@@ -30,11 +29,6 @@ public class Card_Properties_Script : Photon.PunBehaviour
     public Vector3 child0_Shift;
     public Vector3 child1_Shift;
     private bool isViewing;
-    string card1;
-    string card2;
-    string card3;
-    private PhotonView PV;
-
     /* TODO:
      * Collisions:
         Implement collition detection in update using rigidbodies and box_coliders to determine when cards are in contact.
@@ -59,7 +53,6 @@ public class Card_Properties_Script : Photon.PunBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PV = GetComponent<PhotonView>();
         isViewing = false;
         playing_Card_Sprite = gameObject.GetComponent<SpriteRenderer>();
     }
@@ -220,21 +213,19 @@ public class Card_Properties_Script : Photon.PunBehaviour
                     int other_Card_Type = other_Card.GetComponent<Card_Properties_Script>().card_Type;
                     if (other_Card_Type != card_Type)
                     {
-                        card1 = other_Card.name;
-                        card2 = this.gameObject.name;
                         if (child_Count == 0)
                         {
-
-                            PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2);
+                            other_Card.GetPhotonView().transform.SetParent(gameObject.GetPhotonView().transform);
+                            other_Card.GetPhotonView().GetComponent<Collider2D>().enabled = false;
+                            other_Card.GetPhotonView().transform.localPosition = Vector3.zero;
                         }
                         else if (child_Count == 1)
                         {
                             if (gameObject.GetPhotonView().GetComponentInChildren<Card_Properties_Script>().card_Type != other_Card_Type)
                             {
-                                PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2);
-                                // other_Card.GetPhotonView().transform.SetParent(gameObject.GetPhotonView().transform);
-                                //other_Card.GetPhotonView().GetComponent<Collider2D>().enabled = false;
-                                //other_Card.GetPhotonView().transform.localPosition = Vector3.zero;
+                                other_Card.GetPhotonView().transform.SetParent(gameObject.GetPhotonView().transform);
+                                other_Card.GetPhotonView().GetComponent<Collider2D>().enabled = false;
+                                other_Card.GetPhotonView().transform.localPosition = Vector3.zero;
                             }
                         }
                     }
@@ -251,71 +242,16 @@ public class Card_Properties_Script : Photon.PunBehaviour
                 int child_Count = gameObject.GetPhotonView().transform.childCount;
                 if (child_Count > 0)
                 {
-                    card1 = gameObject.name;
                     for (int i = child_Count - 1; i >= 0; i--)
                     {
-                        PV.RPC("removeChild_RPC", PhotonTargets.AllBuffered, card1, i);
+                        Transform child_Transform = gameObject.GetPhotonView().transform.GetChild(i);
+                        child_Transform.SetParent(null);
+                        child_Transform.gameObject.GetPhotonView().GetComponent<Collider2D>().enabled = true;
                     }
                 }
             }
         }
     }
-
-    [PunRPC]
-    private void addchild_RPC(string c1, string c2)
-    {
-        GameObject.Find(c1).GetPhotonView().transform.SetParent(GameObject.Find(c2).GetPhotonView().transform);
-        GameObject.Find(c1).GetPhotonView().GetComponent<Collider2D>().enabled = false;
-        GameObject.Find(c1).GetPhotonView().transform.localPosition = Vector3.zero;
-    }
-
-    [PunRPC]
-    private void removeChild_RPC(string c1, int i)
-    {
-
-        Transform child_Transform = GameObject.Find(c1).GetPhotonView().transform.GetChild(i);
-        child_Transform.SetParent(null);
-        child_Transform.gameObject.GetPhotonView().GetComponent<Collider2D>().enabled = true;
-    }
-
-    [PunRPC]
-    private void expandGroup_RPC(string c1, int child_Count)
-    {
-        for (int i = child_Count - 1; i >= 0; i--)
-        {
-            Transform child_Transform = GameObject.Find(c1).GetPhotonView().transform.GetChild(i);
-            if (i == 1)
-            {
-                child_Transform.localPosition = child1_Shift;
-            }
-            else
-            {
-                child_Transform.localPosition = child0_Shift;
-            }
-        }
-        isViewing = true;
-        Debug.Log("is viewing is " + isViewing);
-    }
-
-    [PunRPC]
-    private void collapseGroup_RPC(string c2, int child_Count)
-    {
-        for (int i = child_Count - 1; i >= 0; i--)
-        {
-            Transform child_Transform = GameObject.Find(c2).GetPhotonView().transform.GetChild(i);
-            if (i == 1)
-            {
-                child_Transform.localPosition = Vector3.zero;
-            }
-            else
-            {
-                child_Transform.localPosition = Vector3.zero;
-            }
-        }
-        isViewing = false;
-        Debug.Log("is viewing is " + isViewing);
-    }
-
     private void InspectGroup()
     {
         if (Input.GetKeyDown("space"))
@@ -324,23 +260,43 @@ public class Card_Properties_Script : Photon.PunBehaviour
             {
                 if (!isViewing)
                 {
-                    card1 = gameObject.name;
                     int child_Count = gameObject.GetPhotonView().transform.childCount;
                     if (child_Count > 0)
                     {
-                        PV.RPC("expandGroup_RPC", PhotonTargets.AllBuffered, card1, child_Count);
-                        Debug.Log("is viewing is " + isViewing);
+                        for (int i = child_Count - 1; i >= 0; i--)
+                        {
+                            Transform child_Transform = gameObject.GetPhotonView().transform.GetChild(i);
+                            Vector3 newPos = new Vector3(1, 0, 0);
+                            if (i == 1)
+                            {
+                                child_Transform.localPosition = child1_Shift;
+                            }
+                            else
+                            {
+                                child_Transform.localPosition = child0_Shift;
+                            }
+                        }
+                        isViewing = true;
                     }
                 }
                 else
                 {
-                    card2 = gameObject.name;
-
                     int child_Count = gameObject.GetPhotonView().transform.childCount;
                     if (child_Count > 0)
                     {
-                        PV.RPC("collapseGroup_RPC", PhotonTargets.AllBuffered, card2, child_Count);
-                        Debug.Log("is viewing is " + isViewing);
+                        for (int i = child_Count - 1; i >= 0; i--)
+                        {
+                            Transform child_Transform = gameObject.GetPhotonView().transform.GetChild(i);
+                            if (i == 1)
+                            {
+                                child_Transform.localPosition = Vector3.zero;
+                            }
+                            else
+                            {
+                                child_Transform.localPosition = Vector3.zero;
+                            }
+                        }
+                        isViewing = false;
                     }
                 }
             }
