@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 1255585571401162215}
   - component: {fileID: 1516119740034020725}
   m_Layer: 9
-  m_Name: sf.blue.2
-  m_TagString: BlueCard
+  m_Name: Sf.Blue.2
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7446455980930655804}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 127ad3f131584544abd6682b988d74ec, type: 3}
   m_Name: 
@@ -163,10 +163,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b09ec93ee5130f4586f2c5ede76b3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 7446455980930655804}
+  card: {fileID: 0}
   card_Type: 0
   group_Num: 0
-  in_Group: 0
+  child0_Shift: {x: 0, y: 0, z: 0}
+  child1_Shift: {x: 0, y: 0, z: 0}
 --- !u!114 &4006007370247314926
 MonoBehaviour:
   m_ObjectHideFlags: 0
