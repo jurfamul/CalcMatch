@@ -14,6 +14,13 @@ public class exit : MonoBehaviour
 
     public void changeScene()
     {
+        if (PhotonNetwork.isMasterClient)
+        {
+            if (PhotonNetwork.playerList.Length > 1)
+            {
+                PhotonNetwork.SetMasterClient(PhotonNetwork.playerList[1]);
+            }
+        }
         PhotonNetwork.LeaveRoom();
         SceneManager.LoadScene("DemoWorker-Scene");
     }

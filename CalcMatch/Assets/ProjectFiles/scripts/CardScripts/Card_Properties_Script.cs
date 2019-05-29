@@ -16,6 +16,8 @@ public class Card_Properties_Script : Photon.PunBehaviour
     public int card_Type;
     // This integer will represent the set in which this card belongs.
     public int group_Num;
+
+    //Coordinates for main camera bounds: Used to stop cards from leaving camera view
     private float xbottom = -0.03f;
     private float ybottom = -4.0f;
     private float xtop = -0.03f;
@@ -24,38 +26,28 @@ public class Card_Properties_Script : Photon.PunBehaviour
     private float yleft = -0.07f;
     private float xright = 9.5f;
     private float yright = 0.04f;
+
+    //RaycastHit used to detect if the mouse is in contact with the card
     private RaycastHit2D ray;
+
+    //Floats used to set the double click detection window for the DoubleClick implementation on line 91
     private float last_Click_Time = 0f;
     private float catch_Time = 0.25f;
+
+    //The local vectors used to determine the position of the children of the card when the InspectGroup method is called.
     public Vector3 child0_Shift;
     public Vector3 child1_Shift;
+
+    //The boolean used to indicate if the current card set is in viewing mode in the InspectGroup method
     private bool isViewing;
+
+    //The names of the card game objects that are passed it to the RPC calls
     string card1;
     string card2;
-    string card3;
+
+    //The photonView component that is attatched to current card. Used to make RPC calls.
     private PhotonView PV;
 
-    /* TODO:
-     * Collisions:
-        Implement collition detection in update using rigidbodies and box_coliders to determine when cards are in contact.
-        If there is less then or greater then three cards in the collision, do nothing.
-        Otherwise, compare the group numbers of the cards in the collition.
-        If the group number of all three cards matches, group cards into a set using collision hierarchy
-        Otherwise, do nothing or have the card change color to indicate that the cards do not make up a set.
-       Screen Bounds:
-        Update input handler to ensure that the card can not be moved compleately outside of the range of the camera
-       
-       Event Listener:
-        Update (or replace) existing input handler script to allow the card to listen to either the player on the local system
-        or the players on the server using an event listener.
-       Scene Manager:
-        Implement a scene manager object that will handle scene transitions and keep global data between loads
-       Network Manager:
-        Implement network manager object and network player objects which will listen to the host server and translate the server
-        updates into usable inputs which can be understood by the event listener.
-       Pre-fabs:
-        Create playing card pre-fab which can be used to quickly create new playing card objects.
-     */
     // Start is called before the first frame update
     void Start()
     {
@@ -63,33 +55,10 @@ public class Card_Properties_Script : Photon.PunBehaviour
         isViewing = false;
         playing_Card_Sprite = gameObject.GetComponent<SpriteRenderer>();
     }
-    string butName;
-    GameObject tempButton;
-    Button newbutton;
+
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetButtonDown("Jump"))
-        {
-            //screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-            //offset = gameObject.transform.position -
-            // Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-            ray = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (ray.collider != null)
-            {
-                if (ray.collider.gameObject == gameObject)
-                {
-                    butName = ray.transform.gameObject.name;
-                    butName = butName.Substring(0, butName.Length - 7);
-                    //Debug.Log(GameObject.Find(butName));
-                    newbutton = GameObject.Find(butName).GetComponent<Button>();
-                    newbutton.interactable = true;
-                    PhotonNetwork.Destroy(gameObject);
-                }
-            }
-            //Destroy(gameObject, .00001f);
-           // Debug.Log("TEST DESTROY");
-        }*/
         if (transform.position.y < ybottom)
         {
             Vector3 newPosition = new Vector3(transform.position.x, ybottom, transform.position.z);
@@ -206,10 +175,10 @@ public class Card_Properties_Script : Photon.PunBehaviour
             }
         }
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         int child_Count = gameObject.GetPhotonView().transform.childCount;
-        // double click to add a card to the current set
+
         if (Input.GetKeyDown("left shift") || Input.GetKeyDown("right shift"))
         {
             if (MouseOverTest())
@@ -217,24 +186,24 @@ public class Card_Properties_Script : Photon.PunBehaviour
                 if (collision.gameObject.CompareTag("Card"))
                 {
                     GameObject other_Card = collision.gameObject;
-                    int other_Card_Type = other_Card.GetComponent<Card_Properties_Script>().card_Type;
-                    if (other_Card_Type != card_Type)
+                    if (other_Card.transform.childCount == 0)
                     {
-                        card1 = other_Card.name;
-                        card2 = this.gameObject.name;
-                        if (child_Count == 0)
+                        int other_Card_Type = other_Card.GetComponent<Card_Properties_Script>().card_Type;
+                        if (other_Card_Type != card_Type)
                         {
-
-                            PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2);
-                        }
-                        else if (child_Count == 1)
-                        {
-                            if (gameObject.GetPhotonView().GetComponentInChildren<Card_Properties_Script>().card_Type != other_Card_Type)
+                            card1 = other_Card.name;
+                            card2 = this.gameObject.name;
+                            if (child_Count == 0)
                             {
                                 PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2);
-                                // other_Card.GetPhotonView().transform.SetParent(gameObject.GetPhotonView().transform);
-                                //other_Card.GetPhotonView().GetComponent<Collider2D>().enabled = false;
-                                //other_Card.GetPhotonView().transform.localPosition = Vector3.zero;
+                            }
+                            else if (child_Count > 0)
+                            {
+                                int child_Type = gameObject.GetPhotonView().GetComponentsInChildren<Card_Properties_Script>()[1].card_Type;
+                                if (gameObject.GetPhotonView().GetComponentsInChildren<Card_Properties_Script>()[1].card_Type != other_Card_Type)
+                                {
+                                    PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2);
+                                }
                             }
                         }
                     }
@@ -242,6 +211,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
             }
         }
     }
+
     private void RemoveChildren()
     {
         if (Input.GetMouseButtonDown(1))

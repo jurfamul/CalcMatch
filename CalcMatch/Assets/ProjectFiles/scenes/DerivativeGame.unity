@@ -476,6 +476,7 @@ GameObject:
   - component: {fileID: 114094427}
   - component: {fileID: 114094426}
   - component: {fileID: 114094425}
+  - component: {fileID: 114094428}
   m_Layer: 5
   m_Name: Instructions
   m_TagString: Untagged
@@ -525,8 +526,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0, g: 0.044056654, b: 0.5377358, a: 1}
-    m_HighlightedColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.04962579, b: 0.6509434, a: 1}
+    m_PressedColor: {r: 0.027233878, g: 0.0537331, b: 0.6415094, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -544,18 +545,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1726510285}
-        m_MethodName: set_text
-        m_Mode: 5
+      - m_Target: {fileID: 114094428}
+        m_MethodName: OnClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 'Game Instructions: Click buttons to activate/deactivate
-            cards. Click and drag to move them around the screen. Hover over with
-            curor and press shift to create a match. Right click to unlink a match.
-            Hover over and press space to view all cards in the match.'
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -597,6 +595,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114094423}
   m_CullTransparentMesh: 0
+--- !u!114 &114094428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114094423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9720457554bd0af49885e058b8d5eca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directions: {fileID: 1726510285}
 --- !u!1 &144016030
 GameObject:
   m_ObjectHideFlags: 0
@@ -11510,7 +11521,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Game Instructions: Click buttons to activate/deactivate cards. Click and
+    drag to move them around the screen. Hover over with curor and press shift to
+    create a match. Right click to unlink a match. Hover over and press space to view
+    all cards in the match.'
 --- !u!222 &1726510286
 CanvasRenderer:
   m_ObjectHideFlags: 0
