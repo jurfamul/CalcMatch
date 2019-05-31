@@ -17,10 +17,11 @@ public class EventManager : Photon.PunBehaviour
     Color color;
     string cChange;
     float b;
+    public Text Error;
     private void Start()
     {
         PV = GetComponent<PhotonView>();
-
+        Error.enabled = false;
         //clicked = false;
     }
 
@@ -70,8 +71,19 @@ public class EventManager : Photon.PunBehaviour
             card = GameObject.Find(butName);
             card.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
             go.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
-            PhotonNetwork.Destroy(card);
-            PV.RPC("RPC_disable", PhotonTargets.AllBuffered, cChange);
+            if(card.GetPhotonView().transform.childCount >=1)
+            {
+                StartCoroutine(Example());
+            }
+
+            
+            else
+            {
+                Debug.Log("no child kill it");
+                PhotonNetwork.Destroy(card);
+                PV.RPC("RPC_disable", PhotonTargets.AllBuffered, cChange);
+            }
+       
             //clicked = false;
         }
         card.GetComponent<PhotonView>().TransferOwnership(0);
@@ -106,7 +118,14 @@ public class EventManager : Photon.PunBehaviour
    
   }
 
- 
+
+    IEnumerator Example()
+    {
+        Error.enabled = true;
+        yield return new WaitForSeconds(2);
+        Error.enabled = false;
+    }
+    
 
   //[PunRPC]
   //public void RPC_enable()

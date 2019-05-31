@@ -347,6 +347,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 90076301}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &90076301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,6 +522,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 144016033}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &144016033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1496,6 +1498,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 253403400}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &253403400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2075,6 +2078,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 388654700}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &388654700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2820,6 +2824,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 597700126}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &597700126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3350,6 +3355,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 641020607}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &641020607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3544,6 +3550,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 656695973}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &656695973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3817,6 +3824,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 682531440}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &682531440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4169,6 +4177,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 718324410}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &718324410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4363,6 +4372,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 739232384}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &739232384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5052,6 +5062,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 836071239}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &836071239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5345,6 +5356,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 889298649}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &889298649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5618,6 +5630,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 905888828}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &905888828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5792,6 +5805,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 938425359}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &938425359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6006,6 +6020,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 940632910}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &940632910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6200,6 +6215,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 960777395}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &960777395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6473,6 +6489,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 980857680}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &980857680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6933,6 +6950,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1034083524}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1034083524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7305,6 +7323,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1075270002}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1075270002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7558,6 +7577,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1114283230}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1114283230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7752,6 +7772,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1137219317}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1137219317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8045,6 +8066,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1162183026}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1162183026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8319,7 +8341,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 124.20002, y: 23.635014}
+  m_AnchoredPosition: {x: 124.20002, y: 23.63501}
   m_SizeDelta: {x: 25.98999, y: 27.070007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1170744595
@@ -8581,6 +8603,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1215970796}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1215970796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8755,6 +8778,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1237914100}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1237914100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9078,6 +9102,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1284384664}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1284384664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9483,6 +9508,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1401404374}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1401404374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9657,6 +9683,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1410903723}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1410903723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10290,6 +10317,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1517845825}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1517845825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10563,6 +10591,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1563614887}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1563614887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10757,6 +10786,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1581710718}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1581710718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10931,6 +10961,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1603707528}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1603707528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11125,6 +11156,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1657897746}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1657897746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11413,6 +11445,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1690617295}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1690617295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11765,6 +11798,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1741388049}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1741388049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11959,6 +11993,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1755864295}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1755864295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12153,6 +12188,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1755891302}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1755891302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12327,6 +12363,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 1826711369}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1826711369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12773,6 +12810,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1866858172}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1866858172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12967,6 +13005,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1895515566}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1895515566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13161,6 +13200,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 1899689491}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1899689491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13434,6 +13474,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1484970815}
   myButton: {fileID: 1925083847}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &1925083847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13780,7 +13821,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Game Instructions: Click buttons to activate/deactivate cards. Click and
-    drag to move them around the screen. Hover over with curor and press shift to
+    drag to move them around the screen. Hover over with cursor and press shift to
     create a match. Right click to unlink a match. Hover over and press space to view
     all cards in the match.'
 --- !u!222 &1964726109
@@ -14014,6 +14055,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 2060216672}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &2060216672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14208,6 +14250,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1270753884}
   myButton: {fileID: 2063955743}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &2063955743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14501,6 +14544,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 2115588304}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &2115588304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14695,6 +14739,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1300037165}
   myButton: {fileID: 2116635035}
   card: {fileID: 0}
+  Error: {fileID: 0}
 --- !u!114 &2116635035
 MonoBehaviour:
   m_ObjectHideFlags: 0
