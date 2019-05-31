@@ -1192,6 +1192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Skin: {fileID: 11400000, guid: 0a36872c871b46d4ea5e4e064f3bf975, type: 2}
+  font: {fileID: 12800000, guid: c2d622bc4892ff441aee9289a6006707, type: 3}
   TransferOwnershipOnRequest: 1
 --- !u!114 &1664540823
 MonoBehaviour:
