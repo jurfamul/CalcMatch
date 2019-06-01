@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using ExitGames.Client.Photon;
-
 public class exit : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
+    }
     public void changeScene()
     {
         if (PhotonNetwork.isMasterClient)
@@ -20,23 +18,15 @@ public class exit : MonoBehaviour
             {
                 PhotonNetwork.SetMasterClient(PhotonNetwork.playerList[1]);
             }
-        } else
-        {
-            if (PhotonNetwork.playerList.Length == 1)
-            {
-                PhotonNetwork.autoCleanUpPlayerObjects = true;
-                PhotonNetwork.DestroyAll();
-                PhotonNetwork.LeaveRoom();
-                PhotonNetwork.autoCleanUpPlayerObjects = false;
-            }
         }
         PhotonNetwork.LeaveRoom();
+        PhotonNetwork.Disconnect();
+        // PhotonNetwork.LeaveRoom();
         SceneManager.LoadScene("DemoWorker-Scene");
     }
-
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
