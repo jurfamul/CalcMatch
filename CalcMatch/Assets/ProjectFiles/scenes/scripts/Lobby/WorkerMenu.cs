@@ -28,6 +28,7 @@ public class WorkerMenu : MonoBehaviour
 
     private string errorDialog;
     private double timeToClearDialog;
+    
 
     public string ErrorDialog
     {
@@ -56,11 +57,7 @@ public class WorkerMenu : MonoBehaviour
         }
 
         // generate a name for this player, if none is assigned yet
-        if (String.IsNullOrEmpty(PhotonNetwork.playerName))
-        {
-            PhotonNetwork.playerName = "Guest" + Random.Range(1, 9999);
-        }
-
+       
         // if you wanted more debug out, turn this on:
         // PhotonNetwork.logLevel = NetworkLogLevel.Full;
     }
@@ -112,7 +109,7 @@ public class WorkerMenu : MonoBehaviour
 
 
         Rect title = new Rect((Screen.width - this.WidthAndHeight.x) / 2, (Screen.height - this.WidthAndHeight.y) / 2, this.WidthAndHeight.x, this.WidthAndHeight.y);
-        GUI.Box(title, "Welcome to CalcMatch!");
+        //GUI.Box(title, "Welcome to CalcMatch!");
         GUILayout.BeginArea(title);
 
         GUILayout.Space(50);
@@ -208,6 +205,10 @@ public class WorkerMenu : MonoBehaviour
     // We have two options here: we either joined(by title, list or random) or created a room.
     public void OnJoinedRoom()
     {
+        if (String.IsNullOrEmpty(PhotonNetwork.playerName))
+        {
+            PhotonNetwork.playerName = "Guest" + Random.Range(1, 9999);
+        }
         Debug.Log("OnJoinedRoom");
     }
 
@@ -231,6 +232,10 @@ public class WorkerMenu : MonoBehaviour
 
     public void OnCreatedRoom()
     {
+        if (String.IsNullOrEmpty(PhotonNetwork.playerName))
+        {
+            PhotonNetwork.playerName = "Guest" + Random.Range(1, 9999);
+        }
         Debug.Log("OnCreatedRoom");
         PhotonNetwork.LoadLevel(SceneNameGame);
     }

@@ -20,6 +20,15 @@ public class exit : MonoBehaviour
             {
                 PhotonNetwork.SetMasterClient(PhotonNetwork.playerList[1]);
             }
+        } else
+        {
+            if (PhotonNetwork.playerList.Length == 1)
+            {
+                PhotonNetwork.autoCleanUpPlayerObjects = true;
+                PhotonNetwork.DestroyAll();
+                PhotonNetwork.LeaveRoom();
+                PhotonNetwork.autoCleanUpPlayerObjects = false;
+            }
         }
         PhotonNetwork.LeaveRoom();
         SceneManager.LoadScene("DemoWorker-Scene");

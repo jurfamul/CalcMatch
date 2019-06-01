@@ -9,6 +9,7 @@ MonoImporter:
   defaultReferences:
   - Skin: {instanceID: 0}
   - font: {fileID: 12800000, guid: c2d622bc4892ff441aee9289a6006707, type: 3}
+  - image: {fileID: 2800000, guid: 88a6823ebc2e6084fb75022be1748df7, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
