@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 1516119740034020725}
   m_Layer: 9
   m_Name: Ts.Blue.12
-  m_TagString: BlueCard
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
