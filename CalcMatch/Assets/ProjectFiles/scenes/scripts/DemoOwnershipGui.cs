@@ -42,7 +42,7 @@ public class DemoOwnershipGui : MonoBehaviour
             return;
         }
         GUI.skin.font = font;
-      /*  GUILayout.BeginArea(new Rect(Screen.width - 200, 0, 200, Screen.height));
+        /*GUILayout.BeginArea(new Rect(Screen.width - 200, 0, 200, Screen.height));
         {
             string label = TransferOwnershipOnRequest ? "passing objects" : "rejecting to pass";
             if (GUILayout.Button(label))
@@ -50,8 +50,8 @@ public class DemoOwnershipGui : MonoBehaviour
                 this.TransferOwnershipOnRequest = !this.TransferOwnershipOnRequest;
             }
         }
-        GUILayout.EndArea();
-        */
+        GUILayout.EndArea();*/
+
 
 
         if (PhotonNetwork.inRoom)
