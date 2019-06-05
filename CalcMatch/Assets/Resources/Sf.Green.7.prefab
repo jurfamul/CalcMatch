@@ -10,12 +10,12 @@ PrefabInstance:
     - target: {fileID: 7446455980930655804, guid: 6ec3aa2f7bae2644db7228287f93a643,
         type: 3}
       propertyPath: m_Name
-      value: sf.green.7
+      value: Sf.Green.7
       objectReference: {fileID: 0}
     - target: {fileID: 7446455980930655804, guid: 6ec3aa2f7bae2644db7228287f93a643,
         type: 3}
       propertyPath: m_TagString
-      value: GreenCard
+      value: Card
       objectReference: {fileID: 0}
     - target: {fileID: 499173705892721136, guid: 6ec3aa2f7bae2644db7228287f93a643,
         type: 3}

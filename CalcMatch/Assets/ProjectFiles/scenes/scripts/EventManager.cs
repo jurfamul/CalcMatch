@@ -73,7 +73,7 @@ public class EventManager : Photon.PunBehaviour
             go.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
             if(card.GetPhotonView().transform.childCount >=1)
             {
-                StartCoroutine(Example());
+                StartCoroutine(Error_Wait());
             }
 
             
@@ -88,6 +88,7 @@ public class EventManager : Photon.PunBehaviour
         }
         card.GetComponent<PhotonView>().TransferOwnership(0);
         GameObject.Find(cChange).gameObject.GetComponent<PhotonView>().TransferOwnership(0);
+    
     }
 
   [PunRPC]
@@ -119,7 +120,7 @@ public class EventManager : Photon.PunBehaviour
   }
 
 
-    IEnumerator Example()
+    IEnumerator Error_Wait()
     {
         Error.enabled = true;
         yield return new WaitForSeconds(2);
