@@ -72,12 +72,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.097
       objectReference: {fileID: 0}
+    - target: {fileID: 4222994681110476370, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.0000005
+      objectReference: {fileID: 0}
     - target: {fileID: 7359052697416436555, guid: 32e476f976807f34c986424174470f54,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300012, guid: 9344fea08f02e40c8993336d7a03c85f,
         type: 3}
+    - target: {fileID: 7359052697416436555, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359052697416436555, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359052697416436555, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_SpriteTileMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6477507345499328465, guid: 32e476f976807f34c986424174470f54,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -87,6 +107,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.2642857
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477507345499328465, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477507345499328465, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477507345499328465, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477507345499328465, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTiling
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4353148799684615275, guid: 32e476f976807f34c986424174470f54,
         type: 3}

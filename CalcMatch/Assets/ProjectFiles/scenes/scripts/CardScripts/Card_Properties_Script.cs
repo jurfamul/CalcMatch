@@ -9,7 +9,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
     private Vector3 screenPoint;
     private Vector3 offset;
     // These are the game objects components that script will interact with during run time. This list will be updated as needed.
-    public static SpriteRenderer playing_Card_Sprite;
+    public SpriteRenderer playing_Card_Sprite;
     // These variables can be seen and modified in the unity editer in real time.
     // This integer, between 0 and 2, will represent which type of card this object represents.
     // 0 = equation, 1 = derivative, and 2 = graph.
@@ -41,6 +41,12 @@ public class Card_Properties_Script : Photon.PunBehaviour
     //The boolean used to indicate if the current card set is in viewing mode in the InspectGroup method
     private bool isViewing;
 
+    //The boolean used to indicate if the current card set is contained with in the full-set corral
+    public bool inCorral;
+
+    private Vector3 StartingScale;
+    public Vector3 NewScale;
+
     //The names of the card game objects that are passed it to the RPC calls
     string card1;
     string card2;
@@ -58,6 +64,8 @@ public class Card_Properties_Script : Photon.PunBehaviour
         PV = GetComponent<PhotonView>();
         isViewing = false;
         playing_Card_Sprite = gameObject.GetComponent<SpriteRenderer>();
+        StartingScale = gameObject.transform.localScale;
+        NewScale = gameObject.transform.localScale / 2;
     }
 
     // Update is called once per frame
@@ -67,7 +75,9 @@ public class Card_Properties_Script : Photon.PunBehaviour
         InspectGroup();
         RemoveChildren();
         StopAtFullSetBoundary();
+        ScaleSetInBounds();
     }
+
     private bool MouseOverTest()
     {
         ray = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
@@ -80,6 +90,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
         }
         return false;
     }
+
     private bool DoubleClick(bool rightClick)
     {
         if (!rightClick)
@@ -161,6 +172,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
             }
         }
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         int child_Count = gameObject.GetPhotonView().transform.childCount;
@@ -353,6 +365,36 @@ public class Card_Properties_Script : Photon.PunBehaviour
             {
                 Vector3 newPosition = new Vector3(xright, transform.position.y, transform.position.z);
                 transform.position = newPosition;
+            }
+        }
+    }
+
+    private void ScaleSetInBounds()
+    {
+        if (gameObject.transform.childCount == 2)
+        {
+            if (gameObject.transform.parent == null)
+            {
+                Vector3 CurrentPosition = gameObject.GetPhotonView().transform.position;
+
+                if (!inCorral)
+                {
+                    if (CurrentPosition.x < x_Bound && CurrentPosition.y > y_Bound)
+                    {
+                        gameObject.GetPhotonView().transform.localScale = NewScale;
+                        inCorral = true;
+                        Debug.Log("Entered corral");
+                    }
+                }
+                else
+                {
+                    if (CurrentPosition.x > x_Bound || CurrentPosition.y < y_Bound)
+                    {
+                        gameObject.GetPhotonView().transform.localScale = StartingScale;
+                        inCorral = false;
+                        Debug.Log("Left Corral");
+                    }
+                }
             }
         }
     }

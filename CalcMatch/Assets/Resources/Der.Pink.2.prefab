@@ -72,12 +72,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3569158795197331359, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7868843230071458438, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300002, guid: a3aa79a1c297748759cb9683a463580a,
         type: 3}
+    - target: {fileID: 7868843230071458438, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.235
+      objectReference: {fileID: 0}
+    - target: {fileID: 7868843230071458438, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7868843230071458438, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
+        type: 3}
+      propertyPath: m_SpriteTileMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5978421675257892380, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -87,6 +107,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.23428571
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978421675257892380, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.235
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978421675257892380, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978421675257892380, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTiling
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3997606089336561062, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
         type: 3}

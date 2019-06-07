@@ -78,10 +78,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300024, guid: 9344fea08f02e40c8993336d7a03c85f,
         type: 3}
+    - target: {fileID: 7359052697416436555, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_SpriteTileMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6477507345499328465, guid: 32e476f976807f34c986424174470f54,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.34285715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477507345499328465, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTiling
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4353148799684615275, guid: 32e476f976807f34c986424174470f54,
         type: 3}
