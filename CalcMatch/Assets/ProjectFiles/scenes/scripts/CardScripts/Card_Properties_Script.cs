@@ -48,6 +48,10 @@ public class Card_Properties_Script : Photon.PunBehaviour
     //The photonView component that is attatched to current card. Used to make RPC calls.
     private PhotonView PV;
 
+    //The x and y world space coordinates for the complete set boundary
+    private float x_Bound = -7.27f;
+    private float y_Bound = -3.86f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,28 +63,10 @@ public class Card_Properties_Script : Photon.PunBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < ybottom)
-        {
-            Vector3 newPosition = new Vector3(transform.position.x, ybottom, transform.position.z);
-            transform.position = newPosition;
-        }
-        if (transform.position.y > ytop)
-        {
-            Vector3 newPosition = new Vector3(transform.position.x, ytop, transform.position.z);
-            transform.position = newPosition;
-        }
-        if (transform.position.x < xleft)
-        {
-            Vector3 newPosition = new Vector3(xleft, transform.position.y, transform.position.z);
-            transform.position = newPosition;
-        }
-        if (transform.position.x > xright)
-        {
-            Vector3 newPosition = new Vector3(xright, transform.position.y, transform.position.z);
-            transform.position = newPosition;
-        }
+        StopAtScreenBoundary();
         InspectGroup();
         RemoveChildren();
+        StopAtFullSetBoundary();
     }
     private bool MouseOverTest()
     {
@@ -313,6 +299,60 @@ public class Card_Properties_Script : Photon.PunBehaviour
                         Debug.Log("is viewing is " + isViewing);
                     }
                 }
+            }
+        }
+    }
+
+    private void StopAtFullSetBoundary()
+    {
+        if (gameObject.transform.childCount != 2)
+        {
+            if (gameObject.transform.parent == null)
+            {
+                Vector3 left_Offset = this.transform.right * this.GetComponent<BoxCollider2D>().bounds.extents.x * -1f;
+                Vector3 top_Offset = this.transform.up * this.GetComponent<BoxCollider2D>().bounds.extents.y;
+
+                Vector3 current_Position = this.transform.position;
+                Vector3 current_Position_Left = current_Position + left_Offset;
+                Vector3 current_Position_Top = current_Position + top_Offset;
+
+                if (current_Position_Left.x < x_Bound && current_Position.y > y_Bound)
+                {
+                    current_Position = new Vector3(x_Bound - left_Offset.x, current_Position.y, current_Position.z);
+                    this.transform.position = current_Position;
+                }
+                else if (current_Position.x < x_Bound && current_Position_Top.y < y_Bound)
+                {
+                    current_Position = new Vector3(current_Position.x, y_Bound - top_Offset.y, current_Position.z);
+                    this.transform.position = current_Position;
+                }
+            }
+        }
+    }
+
+    private void StopAtScreenBoundary()
+    {
+        if (transform.parent == null)
+        {
+            if (transform.position.y < ybottom)
+            {
+                Vector3 newPosition = new Vector3(transform.position.x, ybottom, transform.position.z);
+                transform.position = newPosition;
+            }
+            if (transform.position.y > ytop)
+            {
+                Vector3 newPosition = new Vector3(transform.position.x, ytop, transform.position.z);
+                transform.position = newPosition;
+            }
+            if (transform.position.x < xleft)
+            {
+                Vector3 newPosition = new Vector3(xleft, transform.position.y, transform.position.z);
+                transform.position = newPosition;
+            }
+            if (transform.position.x > xright)
+            {
+                Vector3 newPosition = new Vector3(xright, transform.position.y, transform.position.z);
+                transform.position = newPosition;
             }
         }
     }
