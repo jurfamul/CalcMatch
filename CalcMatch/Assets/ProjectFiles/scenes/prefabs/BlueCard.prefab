@@ -36,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 7446455980930655804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,10 +82,10 @@ SpriteRenderer:
   m_Color: {r: 0.46262014, g: 0.64365613, b: 0.8679245, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 2
   m_Size: {x: 0.33571428, y: 0.26857144}
   m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
+  m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
@@ -130,9 +130,9 @@ BoxCollider2D:
     oldSize: {x: 0.33571428, y: 0.26857144}
     newSize: {x: 0.33571428, y: 0.26857144}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+    drawMode: 2
+    adaptiveTiling: 1
+  m_AutoTiling: 1
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.25714287}
   m_EdgeRadius: 0
@@ -164,10 +164,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   card: {fileID: 0}
+  playing_Card_Sprite: {fileID: 0}
   card_Type: 0
   group_Num: 0
   child0_Shift: {x: 0.3, y: 0, z: 0}
   child1_Shift: {x: -0.3, y: 0, z: 0}
+  inCorral: 0
+  NewScale: {x: 3.5, y: 3.5, z: 0}
 --- !u!114 &4006007370247314926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +323,7 @@ MonoBehaviour:
     InterpolateRotateTowardsSpeed: 180
     InterpolateLerpSpeed: 5
   m_ScaleModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
