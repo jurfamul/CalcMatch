@@ -6,134 +6,155 @@ using UnityEngine.UI;
 [RequireComponent(typeof(PhotonView))]
 public class EventManager : Photon.PunBehaviour
 {
+    //defines where the card prefabs spawn
     public Transform spawnPoint;
-    public static bool ButtOn = true;
-    //public photonButtons myButton;
-    public Button myButton;
+    //PhotonView needed for RPC calls
     private PhotonView PV;
+    //GameObject references for the card
     public GameObject card;
+    //determines if we can spawn or delete a card.
     private bool clicked = false;
+    //A gameobject to hold the button reference
     GameObject go;
+    //Buttons color to change the transparency on the buttons
     Color color;
+    //String for RPC call because you cant pass in objects.
     string cChange;
-    float b;
+    //Holds the error message when a the trying to delete the parent.
     public Text Error;
+
+    //Initializes photonview and error.enabled.
     private void Start()
     {
         PV = GetComponent<PhotonView>();
         Error.enabled = false;
-        //clicked = false;
     }
 
-  string butName;
-    //GameObject card;
+    //holds a reference to the button name so we can find the proper prefab and spawn it.
+    string butName;
+    //Controls spawning of card prefabs and button disabling/coloring.
     public void OnButtonClick()
     {
 
-    go = EventSystem.current.currentSelectedGameObject;
+        //Gets the current button that is clicked as a gameobject.
+        go = EventSystem.current.currentSelectedGameObject;
 
-    Debug.Log("button name is " + cChange);
+        //Checks if the button isn't greyed out(ready to spawn a prefab)
+        //and if the name of the button is not null
+        //Also sets cChange to the button name.
         if (clicked == false)
         {
             cChange = go.name;
             if (go != null)
             {
+
+                //Spawns appropriate card prefab based on go.name by searching the resources folder.
+                //Spawns the card at the spawn point. Then transfers ownership of the button and the card
+                //to the player that pressed the button.
                 card = PhotonNetwork.Instantiate(go.name, spawnPoint.position, spawnPoint.rotation, 0);
                 card.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
                 go.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
 
+                //Checks if we were successful in setting the owner. Either way we call an RPC call
+                //Make RPC call with the name of the method we are calling first, PhotonTargets.AllBuffered 
+                //syncs to all clients and clients that connect later, and cChange is a parameter that holds
+                //the card name and gets passed to "RPC_disable".
                 if (card.GetComponent<PhotonView>().ownerId != PhotonNetwork.player.ID)
                 {
 
                     PV.RPC("RPC_disable", PhotonTargets.AllBuffered, cChange);
-                    Debug.Log("not mine owner is " + card.GetComponent<PhotonView>().ownerId);
+
                 }
-                //clicked = true;
                 else
                 {
                     PV.RPC("RPC_disable", PhotonTargets.AllBuffered, cChange);
-                    Debug.Log("my card id is " + card.GetComponent<PhotonView>().ownerId);
-                }
-        //myButton.enabled = false;
 
-      }
+                }
+
+            }
             else
             {
-                Debug.Log("currentSelectedGameObject is null");
+                //do nothing
             }
         }
+
+        //Checks if the card has been spawned already, thus the button is disabled.
         else if (clicked == true)
         {
+            //Pulls in the buttons name
             cChange = go.name;
+            //Appends "(Clone)" to the button name because this should now be the 
+            //prefab name that is spawned on the canvas. 
             butName = go.name + "(Clone)";
-            Debug.Log(go.name);
 
+            //Find the game object that has the go.name + "(Clone)"
             card = GameObject.Find(butName);
+
+            //transfer ownership of the button pressed and card that is going to be removed.
             card.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
             go.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player.ID);
-            if(card.GetPhotonView().transform.childCount >=1)
+
+            //Checks if the card has a child
+            //if so we throw an error and do not delete the card
+            //because if we did then we would delete all cards that are children.
+            if (card.GetPhotonView().transform.childCount >= 1)
             {
                 StartCoroutine(Error_Wait());
             }
 
-            
+            //destroys the card since it has no children
+            //calls RPC call to enable button
             else
             {
-                Debug.Log("no child kill it");
                 PhotonNetwork.Destroy(card);
                 PV.RPC("RPC_disable", PhotonTargets.AllBuffered, cChange);
             }
-       
-            //clicked = false;
+
         }
+        //transfer cards and buttons ownership to the scene
         card.GetComponent<PhotonView>().TransferOwnership(0);
         GameObject.Find(cChange).gameObject.GetComponent<PhotonView>().TransferOwnership(0);
-    
+
     }
 
-  [PunRPC]
+    //must apply [PunRPC] attribute to the function per RPC documentation 
+    //takes a string as a paramter because RPC can not take in game objects
+
+    [PunRPC]
     public void RPC_disable(string c)
     {
+        //if the button has spawned a card and is grayed out
+        //sets color equal to the button color and sets the alpha value to 1
+        //alpha as 1 is fully visible
+        //sets clicked to false
         if (clicked == true)
         {
             color = GameObject.Find(c).gameObject.GetComponent<Image>().color;
-            // go.GetComponent<Image>().color = Color.gray;
             color.a = 1;
-            // go.GetComponent<Image>().color = color;
             GameObject.Find(c).gameObject.GetComponent<Image>().color = color;
-            Debug.Log("clicked is being set to false button name is " + c);
-            //Debug.Log("SETTING TRUE");
             clicked = false;
         }
+        //if clicked is not true
+        //sets color to the buttons color and sets the alpha value to .5 which is half transparent
+        //sets clicked to true
         else
         {
             color = GameObject.Find(c).gameObject.GetComponent<Image>().color;
-            // color = go.gameObject.GetComponent<Image>().color;
             color.a = .5f;
             GameObject.Find(c).gameObject.GetComponent<Image>().color = color;
             Debug.Log("clicked is being set to true button name is " + c);
-            //Debug.Log("Setting False");
             clicked = true;
         }
 
-   
-  }
 
+    }
 
+    //coroutine that is triggered when a deletion of a card with a child is attempted
+    //sets the error message to true then waits 2 seconds and disables the error
     IEnumerator Error_Wait()
     {
         Error.enabled = true;
         yield return new WaitForSeconds(2);
         Error.enabled = false;
     }
-    
-
-  //[PunRPC]
-  //public void RPC_enable()
-  //{
-  //  Debug.Log("SETTING FALSE");
-  //  clicked = false;
-
-  //}
-
 }
