@@ -55,4 +55,5 @@ MonoBehaviour:
   - removeChild_RPC
   - collapseGroup_RPC
   - expandGroup_RPC
+  - checkInput_RPC
   DisableAutoOpenWizard: 1

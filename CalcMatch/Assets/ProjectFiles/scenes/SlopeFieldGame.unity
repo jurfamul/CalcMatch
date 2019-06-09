@@ -345,7 +345,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 90076301}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &90076301
@@ -520,7 +519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 144016033}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &144016033
@@ -908,7 +906,6 @@ GameObject:
   - component: {fileID: 200518648}
   - component: {fileID: 200518647}
   - component: {fileID: 200518646}
-  - component: {fileID: 200518645}
   m_Layer: 8
   m_Name: leftBorder
   m_TagString: Border
@@ -916,18 +913,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &200518645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 200518644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f813aa43c64e86a468b0d51512646de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &200518646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1417,7 +1402,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 253403400}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &253403400
@@ -2000,7 +1984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 388654700}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &388654700
@@ -2927,7 +2910,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 641020607}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &641020607
@@ -3122,7 +3104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 656695973}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &656695973
@@ -3475,7 +3456,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 739232384}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &739232384
@@ -3606,7 +3586,6 @@ GameObject:
   - component: {fileID: 777646407}
   - component: {fileID: 777646406}
   - component: {fileID: 777646405}
-  - component: {fileID: 777646404}
   m_Layer: 8
   m_Name: rightCardBoundary
   m_TagString: Border
@@ -3614,18 +3593,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &777646404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777646403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f813aa43c64e86a468b0d51512646de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &777646405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3725,7 +3692,6 @@ GameObject:
   - component: {fileID: 805180916}
   - component: {fileID: 805180915}
   - component: {fileID: 805180914}
-  - component: {fileID: 805180913}
   m_Layer: 8
   m_Name: rightBorder
   m_TagString: Border
@@ -3733,18 +3699,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &805180913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805180912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f813aa43c64e86a468b0d51512646de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &805180914
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3844,7 +3798,6 @@ GameObject:
   - component: {fileID: 821501888}
   - component: {fileID: 821501887}
   - component: {fileID: 821501886}
-  - component: {fileID: 821501889}
   m_Layer: 8
   m_Name: bottomBorder
   m_TagString: Border
@@ -3940,18 +3893,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &821501889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821501885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f813aa43c64e86a468b0d51512646de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &836071236
 GameObject:
   m_ObjectHideFlags: 0
@@ -4007,7 +3948,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 836071239}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &836071239
@@ -4301,7 +4241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 905888828}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &905888828
@@ -4496,7 +4435,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 940632910}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &940632910
@@ -5031,7 +4969,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 1034083524}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1034083524
@@ -5325,7 +5262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 1075270002}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1075270002
@@ -5579,7 +5515,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 1114283230}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1114283230
@@ -5809,7 +5744,6 @@ GameObject:
   - component: {fileID: 1169220000}
   - component: {fileID: 1169219999}
   - component: {fileID: 1169219998}
-  - component: {fileID: 1169219997}
   m_Layer: 8
   m_Name: bottomCardBoundary
   m_TagString: Border
@@ -5817,18 +5751,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1169219997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169219996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f813aa43c64e86a468b0d51512646de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1169219998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6022,7 +5944,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 1284384664}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1284384664
@@ -6349,7 +6270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 1401404374}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1401404374
@@ -6524,7 +6444,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 1410903723}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1410903723
@@ -6675,7 +6594,6 @@ GameObject:
   - component: {fileID: 1424731623}
   - component: {fileID: 1424731622}
   - component: {fileID: 1424731621}
-  - component: {fileID: 1424731620}
   m_Layer: 8
   m_Name: topBorder
   m_TagString: Border
@@ -6683,18 +6601,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1424731620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424731619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f813aa43c64e86a468b0d51512646de4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1424731621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7153,7 +7059,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 1517845825}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1517845825
@@ -7427,7 +7332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 1581710718}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1581710718
@@ -7602,7 +7506,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 1603707528}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1603707528
@@ -7891,7 +7794,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 1690617295}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1690617295
@@ -8165,7 +8067,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 1741388049}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1741388049
@@ -8360,7 +8261,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 1755864295}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1755864295
@@ -8555,7 +8455,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1484970815}
-  myButton: {fileID: 1755891302}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1755891302
@@ -8730,7 +8629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 1826711369}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1826711369
@@ -9177,7 +9075,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 1866858172}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1866858172
@@ -9372,7 +9269,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 1899689491}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &1899689491
@@ -10030,7 +9926,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 2060216672}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &2060216672
@@ -10225,7 +10120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1270753884}
-  myButton: {fileID: 2063955743}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &2063955743
@@ -10519,7 +10413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 2115588304}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &2115588304
@@ -10714,7 +10607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1300037165}
-  myButton: {fileID: 2116635035}
   card: {fileID: 0}
   Error: {fileID: 1024548813}
 --- !u!114 &2116635035

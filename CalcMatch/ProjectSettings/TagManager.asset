@@ -53,6 +53,12 @@ TagManager:
   - name: Card
     uniqueID: 550306987
     locked: 0
+  - name: ParentCard
+    uniqueID: 1599764951
+    locked: 0
+  - name: OwnedCard
+    uniqueID: 2327494141
+    locked: 0
   - name: Track
     uniqueID: 4275242481
     locked: 0
