@@ -15,5 +15,5 @@ project. To view the specifics of our project, navigate to
 Assets/ProjectFiles/Scenes which stores the bulk of the code specific to 
 this project. 
 
-Follow the link and click run game to start inporving your calculus skills.
+Follow the link and click run game to start improving your calculus skills.
 https://calcmatch.itch.io/calc-match 
