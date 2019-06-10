@@ -14,10 +14,10 @@ using UnityEngine.UI;
  *  StopAtScreenBoundary(): line 313
  *  ScaleSetInBounds(): line 354
  *  OnTriggerStay2D(collision2D): line 396
- *  addChild_RPC(string, string): line 439
- *  removeChild_RPC(string, int): line 456
- *  expandGroup_RPC(string, int): line 471
- *  collapseGroup_RPC(string, int): line 492
+ *  addChild_RPC(string, string): line 451
+ *  removeChild_RPC(string, int): line 468
+ *  expandGroup_RPC(string, int): line 483
+ *  collapseGroup_RPC(string, int): line 504
  */
 [RequireComponent(typeof(PhotonView))]
 public class Card_Properties_Script : Photon.PunBehaviour
@@ -417,7 +417,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
                             {
                                 PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2);
                             }
-                            else if (child_Count > 0)
+                            else if (child_Count > 0 && child_Count < 2)
                             {
                                 int child_Type = gameObject.GetPhotonView().GetComponentsInChildren<Card_Properties_Script>()[1].card_Type;
                                 if (gameObject.GetPhotonView().GetComponentsInChildren<Card_Properties_Script>()[1].card_Type != other_Card_Type)
@@ -425,7 +425,19 @@ public class Card_Properties_Script : Photon.PunBehaviour
                                     PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2);
                                 }
                             }
+                            else if (child_Count >= 2)
+                            {
+                                Debug.Log("Set is already full, cannot add more cards.");
+                            }
                         }
+                        else
+                        {
+                            Debug.Log("Cannot add two cards of the same type to a set.");
+                        }
+                    }
+                    else
+                    {
+                        Debug.Log("Cannot combine two card sets.");
                     }
                 }
             }
