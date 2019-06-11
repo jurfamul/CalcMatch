@@ -387,7 +387,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
         }
         else
         {
-            //called if a card in a set is despawned using the spawner buttons while the set is in the full-set c0rral.
+            //called if a card in a set is despawned using the spawner buttons while the set is in the full-set corral.
             if (inCorral)
             {
                 gameObject.GetPhotonView().transform.localScale = StartingScale;
