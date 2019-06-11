@@ -163,6 +163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card_Type: 0
   group_Num: 0
+  child0_Offset: {x: 0.05, y: 0, z: 0}
+  child1_Offset: {x: -0.05, y: 0, z: 0}
   child0_Shift: {x: 0.5, y: 0, z: 0}
   child1_Shift: {x: -0.5, y: 0, z: 0}
   inCorral: 0

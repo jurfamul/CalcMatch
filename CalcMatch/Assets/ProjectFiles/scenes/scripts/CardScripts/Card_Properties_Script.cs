@@ -6,18 +6,18 @@ using UnityEngine.UI;
 /*
  * This script contains all the varibles and code for the behaviour of the playing card game objects with the exception of the click and drag movement.
  * Function list:
- *  MouseOverTest(): line 97
- *  DoubleClick(bool): line 126
- *  RemoveChildren(): line 215
- *  InspectGroup(): line 242
- *  StopAtFullSetBoundary(): line 276
- *  StopAtScreenBoundary(): line 313
- *  ScaleSetInBounds(): line 354
- *  OnTriggerStay2D(collision2D): line 396
- *  addChild_RPC(string, string): line 451
- *  removeChild_RPC(string, int): line 468
- *  expandGroup_RPC(string, int): line 483
- *  collapseGroup_RPC(string, int): line 504
+ *  MouseOverTest(): line 103
+ *  DoubleClick(bool): line 132
+ *  RemoveChildren(): line 221
+ *  InspectGroup(): line 248
+ *  StopAtFullSetBoundary(): line 282
+ *  StopAtScreenBoundary(): line 319
+ *  ScaleSetInBounds(): line 360
+ *  OnTriggerStay2D(collision2D): line 412
+ *  addChild_RPC(string, string): line 467
+ *  removeChild_RPC(string, int): line 491
+ *  expandGroup_RPC(string, int): line 506
+ *  collapseGroup_RPC(string, int): line 527
  */
 [RequireComponent(typeof(PhotonView))]
 public class Card_Properties_Script : Photon.PunBehaviour
@@ -30,6 +30,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
     // This integer, between 0 and 2, will represent which type of card this object represents.
     // 0 = equation, 1 = derivative, and 2 = graph.
     public int card_Type;
+
     // This integer will represent the set in which this card belongs.
     // Note: This can be used if the client wants to implement a check for correct answers in the future
     public int group_Num;
@@ -47,6 +48,11 @@ public class Card_Properties_Script : Photon.PunBehaviour
     //Floats used to set the double click detection window for the DoubleClick implementation on line 91
     private float last_Click_Time = 0f;
     private float catch_Time = 0.25f;
+
+    //The vectors that are used to set the position of a child card when it is added to a set to allow the player to see all cards in a set. 
+    //The vectors are in local coordinates, so the position is relative to the parent cards position.
+    public Vector3 child0_Offset;
+    public Vector3 child1_Offset;
 
     //The local vectors used to determine the position of the children of the card when the InspectGroup method is called.
     public Vector3 child0_Shift;
@@ -295,7 +301,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
                 {
                     //Sets the position of the card equal to its position before it crossed the boundary.
                     Vector3 new_Position = new Vector3(x_Bound - left_Offset.x, current_Position.y, current_Position.z);
-                    this.transform.position = new_Position;
+                    gameObject.GetPhotonView().transform.position = new_Position;
                 }
                 //True if the position of the left edge of the card is less then the outer edge full-set curral and the position of the
                 //top edge of the card is less then the lower bound of the full-set curral.
@@ -303,7 +309,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
                 {
                     //Sets the position of the card equal to its position before it crossed the boundary.
                     Vector3 new_Position = new Vector3(current_Position.x, y_Bound - top_Offset.y, current_Position.z);
-                    this.transform.position = new_Position;
+                    gameObject.GetPhotonView().transform.position = new_Position;
                 }
             }
         }
@@ -327,22 +333,22 @@ public class Card_Properties_Script : Photon.PunBehaviour
             if (current_Position_Bottom.y < ybottom)
             {
                 Vector3 newPosition = new Vector3(transform.position.x, ybottom - bottom_Offset.y, transform.position.z);
-                transform.position = newPosition;
+                gameObject.GetPhotonView().transform.position = newPosition;
             }
             if (current_Position_Top.y > ytop)
             {
                 Vector3 newPosition = new Vector3(transform.position.x, ytop - top_Offset.y, transform.position.z);
-                transform.position = newPosition;
+                gameObject.GetPhotonView().transform.position = newPosition;
             }
             if (current_Position_Left.x < xleft)
             {
                 Vector3 newPosition = new Vector3(xleft - left_Offset.x, transform.position.y, transform.position.z);
-                transform.position = newPosition;
+                gameObject.GetPhotonView().transform.position = newPosition;
             }
             if (current_Position_Right.x > xright)
             {
                 Vector3 newPosition = new Vector3(xright - right_Offset.x, transform.position.y, transform.position.z);
-                transform.position = newPosition;
+                gameObject.GetPhotonView().transform.position = newPosition;
             }
         }
     }
@@ -377,6 +383,16 @@ public class Card_Properties_Script : Photon.PunBehaviour
                         Debug.Log("Left Corral");
                     }
                 }
+            }
+        }
+        else
+        {
+            //called if a card in a set is despawned using the spawner buttons while the set is in the full-set c0rral.
+            if (inCorral)
+            {
+                gameObject.GetPhotonView().transform.localScale = StartingScale;
+                inCorral = false;
+                Debug.Log("Forced out of corral: returned card to full scale.");
             }
         }
     }
@@ -415,14 +431,14 @@ public class Card_Properties_Script : Photon.PunBehaviour
                             card2 = this.gameObject.name;
                             if (child_Count == 0)
                             {
-                                PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2);
+                                PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2, child_Count);
                             }
                             else if (child_Count > 0 && child_Count < 2)
                             {
                                 int child_Type = gameObject.GetPhotonView().GetComponentsInChildren<Card_Properties_Script>()[1].card_Type;
                                 if (gameObject.GetPhotonView().GetComponentsInChildren<Card_Properties_Script>()[1].card_Type != other_Card_Type)
                                 {
-                                    PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2);
+                                    PV.RPC("addchild_RPC", PhotonTargets.AllBuffered, card1, card2, child_Count);
                                 }
                             }
                             else if (child_Count >= 2)
@@ -448,7 +464,7 @@ public class Card_Properties_Script : Photon.PunBehaviour
     //The RPC function that sets the parent pointer of the card named c1 to the card named c2.
     //This function call is sent over the photon network and updates and syncs the game states of all players in the current room.
     [PunRPC]
-    private void addchild_RPC(string c1, string c2)
+    private void addchild_RPC(string c1, string c2, int child_Id)
     {
         //Moves the child card to the lowest card rendering layer dropping it below the parent card in the card set.
         GameObject.Find(c1).GetPhotonView().GetComponent<SpriteRenderer>().sortingLayerName = "Card";
@@ -457,7 +473,14 @@ public class Card_Properties_Script : Photon.PunBehaviour
         //This ensures that the parent card's children move in sync with the parent card.
         GameObject.Find(c1).GetPhotonView().GetComponent<Collider2D>().enabled = false;
         //This sets the local position of the child card to zero placing the card at the same location as its parent.
-        GameObject.Find(c1).GetPhotonView().transform.localPosition = Vector3.zero;
+        if (child_Id == 0)
+        {
+            GameObject.Find(c1).GetPhotonView().transform.localPosition = child0_Offset;
+        }
+        else
+        {
+            GameObject.Find(c1).GetPhotonView().transform.localPosition = child1_Offset;
+        }
         //Moves the parent card to a higher sprite rendering layer meaning that the parent card will be at the top of the card set.
         GameObject.Find(c2).GetPhotonView().GetComponent<SpriteRenderer>().sortingLayerName = "ParentCard";
     }
@@ -508,11 +531,11 @@ public class Card_Properties_Script : Photon.PunBehaviour
             Transform child_Transform = GameObject.Find(c2).GetPhotonView().transform.GetChild(i);
             if (i == 1)
             {
-                child_Transform.localPosition = Vector3.zero;
+                child_Transform.localPosition = child1_Offset;
             }
             else
             {
-                child_Transform.localPosition = Vector3.zero;
+                child_Transform.localPosition = child0_Offset;
             }
         }
         isViewing = false;

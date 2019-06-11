@@ -56,4 +56,5 @@ MonoBehaviour:
   - collapseGroup_RPC
   - expandGroup_RPC
   - checkInput_RPC
+  - setCardPosition_RPC
   DisableAutoOpenWizard: 1
