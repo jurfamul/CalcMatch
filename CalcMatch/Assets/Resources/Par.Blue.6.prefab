@@ -12,6 +12,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Par.Blue.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4006007370247314926, guid: 6ec3aa2f7bae2644db7228287f93a643,
+        type: 3}
+      propertyPath: viewIdField
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006007370247314926, guid: 6ec3aa2f7bae2644db7228287f93a643,
+        type: 3}
+      propertyPath: instantiationId
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3560756274131548119, guid: 6ec3aa2f7bae2644db7228287f93a643,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -70,17 +80,7 @@ PrefabInstance:
     - target: {fileID: 3560756274131548119, guid: 6ec3aa2f7bae2644db7228287f93a643,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 4006007370247314926, guid: 6ec3aa2f7bae2644db7228287f93a643,
-        type: 3}
-      propertyPath: viewIdField
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4006007370247314926, guid: 6ec3aa2f7bae2644db7228287f93a643,
-        type: 3}
-      propertyPath: instantiationId
-      value: -1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5914903212180508244, guid: 6ec3aa2f7bae2644db7228287f93a643,
         type: 3}

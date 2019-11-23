@@ -17,6 +17,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 4353148799684615275, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: viewIdField
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353148799684615275, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: instantiationId
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4222994681110476370, guid: 32e476f976807f34c986424174470f54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -72,16 +82,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.097
       objectReference: {fileID: 0}
-    - target: {fileID: 7359052697416436555, guid: 32e476f976807f34c986424174470f54,
+    - target: {fileID: 4222994681110476370, guid: 32e476f976807f34c986424174470f54,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300024, guid: 9344fea08f02e40c8993336d7a03c85f,
-        type: 3}
-    - target: {fileID: 7359052697416436555, guid: 32e476f976807f34c986424174470f54,
-        type: 3}
-      propertyPath: m_SpriteTileMode
-      value: 1
+      propertyPath: m_LocalScale.y
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6477507345499328465, guid: 32e476f976807f34c986424174470f54,
         type: 3}
@@ -93,15 +97,16 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTiling
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4353148799684615275, guid: 32e476f976807f34c986424174470f54,
+    - target: {fileID: 7359052697416436555, guid: 32e476f976807f34c986424174470f54,
         type: 3}
-      propertyPath: viewIdField
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4353148799684615275, guid: 32e476f976807f34c986424174470f54,
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300024, guid: 9344fea08f02e40c8993336d7a03c85f,
         type: 3}
-      propertyPath: instantiationId
-      value: -1
+    - target: {fileID: 7359052697416436555, guid: 32e476f976807f34c986424174470f54,
+        type: 3}
+      propertyPath: m_SpriteTileMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32e476f976807f34c986424174470f54, type: 3}

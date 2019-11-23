@@ -78,16 +78,6 @@ PrefabInstance:
       propertyPath: m_SpriteTileMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 436567841770795448, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
-        type: 3}
-      propertyPath: child0_Shift.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 436567841770795448, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
-        type: 3}
-      propertyPath: child1_Shift.x
-      value: -0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3997606089336561062, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
         type: 3}
       propertyPath: viewIdField
@@ -156,7 +146,12 @@ PrefabInstance:
     - target: {fileID: 3569158795197331359, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.6
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569158795197331359, guid: 5b4e0d7764cb7cd4bba5141bac3170c9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b4e0d7764cb7cd4bba5141bac3170c9, type: 3}

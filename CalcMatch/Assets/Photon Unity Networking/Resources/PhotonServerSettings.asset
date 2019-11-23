@@ -55,6 +55,7 @@ MonoBehaviour:
   - removeChild_RPC
   - collapseGroup_RPC
   - expandGroup_RPC
-  - checkInput_RPC
-  - setCardPosition_RPC
+  - RPC_Render
+  - multiplyScale
+  - originalScale
   DisableAutoOpenWizard: 1

@@ -32,8 +32,17 @@ public class photonButtons : Photon.MonoBehaviour
         GUILayout.EndArea();
        
     }
+        /*
+        public void roomList()
+        {
+            foreach(RoomInfo room in PhotonNwetwork.GetRoomList())
+            {
+                roomList.text = "Name: " + room.name + " Player Count: " + room.playerCount + " Max Players: " + room.maxPlayers;
+                //GUILayout.Label(string.Format("{0} {1}/{2}", room.name, room.playerCount, room.maxPlayers));
+            }
+        }*/
 
-    private void OnLeftRoom()
+        private void OnLeftRoom()
     {
         
     }

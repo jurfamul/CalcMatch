@@ -18,8 +18,8 @@ public class derivative_loadScene : MonoBehaviour
         
         Debug.Log(scene);
         SceneManager.LoadScene("DerivativeGame");
-    }
 
+    }
     // Update is called once per frame
     void Update()
     {
